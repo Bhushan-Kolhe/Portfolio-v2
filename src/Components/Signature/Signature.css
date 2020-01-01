@@ -1,0 +1,89 @@
+.signature{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+}
+svg {
+    width: 500px;
+    height: 300px;
+    fill:transparent;
+    animation: fill-anime 2s ease forwards 3.5s;
+}
+svg g g path{
+    stroke: #fcba03;
+}
+svg path:nth-child(1){
+    stroke-dasharray: 957.78px;
+    stroke-dashoffset: 957.78px;
+    animation: line-anime 2s ease forwards;
+}
+svg path:nth-child(2){
+    stroke-dasharray: 451.87px;
+    stroke-dashoffset: 451.87px;
+    animation: line-anime 2s ease forwards 0.3s;
+}
+svg path:nth-child(3){
+    stroke-dasharray: 168.44px;
+    stroke-dashoffset: 168.44px;
+    animation: line-anime 2s ease forwards 0.6s;
+}
+svg path:nth-child(4){
+    stroke-dasharray: 235.75px;
+    stroke-dashoffset: 235.75px;
+    animation: line-anime 2s ease forwards 0.9s;
+}
+svg path:nth-child(5){
+    stroke-dasharray: 451.88px;
+    stroke-dashoffset: 451.88px;
+    animation: line-anime 2s ease forwards 1.2s;
+}
+svg path:nth-child(6){
+    stroke-dasharray: 167.83px;
+    stroke-dashoffset: 167.83px;
+    animation: line-anime 2s ease forwards 1.5s;
+}
+svg path:nth-child(7){
+    stroke-dasharray: 142px;
+    stroke-dashoffset: 142px;
+    animation: line-anime 2s ease forwards 1.8s;
+}
+svg path:nth-child(8){
+    stroke-dasharray: 1316px;
+    stroke-dashoffset: 1316px;
+    animation: line-anime 2s ease forwards 2.1s;
+}
+svg path:nth-child(9){
+    stroke-dasharray: 144.9px;
+    stroke-dashoffset: 144.9px;
+    animation: line-anime 2s ease forwards 2.4s;
+}
+svg path:nth-child(10){
+    stroke-dasharray: 437.62px;
+    stroke-dashoffset: 437.62px;
+    animation: line-anime 2s ease forwards 2.7s;
+}
+svg path:nth-child(11){
+    stroke-dasharray: 451.88px;
+    stroke-dashoffset: 451.88px;
+    animation: line-anime 2s ease forwards 3s;
+}
+svg path:nth-child(12){
+    stroke-dasharray: 140.07px;
+    stroke-dashoffset: 140.07px;
+    animation: line-anime 2s ease forwards 3.3s;
+}
+@keyframes line-anime{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill-anime{
+    from{
+        fill: tranparent;
+    }
+    to{
+        fill: #fcba03;
+    }
+}
