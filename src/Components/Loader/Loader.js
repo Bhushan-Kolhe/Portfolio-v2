@@ -4,9 +4,10 @@ import Snow from '../Snow/Snow';
 import './Loader.css';
 
 function Loader() {
+
     setTimeout(() => {
         const LoaderElement = document.getElementById('Loader');
-        LoaderElement.style.display = 'none';
+        LoaderElement.innerHTML = "";
     },6000)
 
     return (

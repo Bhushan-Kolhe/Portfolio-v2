@@ -1,0 +1,171 @@
+.Nav-Bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.1px;
+    padding: 30px 0;
+}
+
+.Nav-Dark {
+    background: #131313d8;
+    animation: menu-anime 1s ease forwards;
+}
+
+.Container {
+    width: 80%;
+    margin: auto;
+}
+
+#Menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#Menu ul li {
+    margin: 0 20px;
+}
+
+#Menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 3px;
+}
+
+#Menu ul li a:hover {
+    color: #fcba03;
+    border-bottom: 2px solid #fcba03;
+}
+
+#Logo {
+    width: 170px;
+}
+
+#Logo svg {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.menu {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+path {
+    fill: none;
+    stroke: #fcba03;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    --length: 24;
+    --offset: -38;
+    stroke-dasharray: var(--length) var(--total-length);
+    stroke-dashoffset: var(--offset);
+    transition: all .8s cubic-bezier(.645, .045, .355, 1);
+}
+
+circle {
+    fill: #00000077;
+    opacity: 0;
+}
+
+label:hover circle {
+    opacity: 1;
+}
+
+.cross input:checked+svg .line--1,
+.cross input:checked+svg .line--3 {
+    --length: 22.627416998;
+}
+
+.cross input:checked+svg .line--2 {
+    --length: 0;
+}
+
+.back input:checked+svg .line--1,
+.back input:checked+svg .line--3 {
+    --length: 8.602325267;
+}
+
+.menu--2 .line--1,
+.menu--2 .line--3 {
+    --total-length: 111.22813415527344;
+    --offset: -50.22813415527344;
+}
+
+.menu--2 .line--2 {
+    --total-length: 99;
+}
+
+.menu--2 input:checked+svg path {
+    transform: translateX(30px);
+}
+
+.menu--2 input:checked+svg .line--1,
+.menu--2 input:checked+svg .line--3 {
+    --offset: -16.9705627485;
+}
+
+.menu--2 input:checked+svg .line--2 {
+    --offset: -20;
+}
+
+@media(max-width: 1000px) {
+    .Nav-Bar {
+        padding: 0;
+    }
+    .menu {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    #Logo {
+        margin-top: 15px;
+    }
+    #Menu {
+        width: 100%;
+    }
+    #Menu ul {
+        flex-direction: column;
+        display: none;
+    }
+    #Menu ul li {
+        padding: 5px;
+    }
+    #Menu ul li a {
+        color: #fcba03;
+    }
+}
+
+@media(max-width: 600px) {
+    .menu svg {
+        width: 40px;
+        height: 40px;
+    }
+    #Logo svg {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@keyframes menu-anime {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}

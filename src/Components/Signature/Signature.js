@@ -5,7 +5,7 @@ function Signature() {
     return (
         <div className="signature">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                viewBox="0 0 450 220" style={{enableBackground:"new 0 0 450 220;"}}>
+                viewBox="0 0 450 220" >
             <g>
                 <g>
                     <path className="st1" d="M64.4,108.1c-0.5,0.6-1.1,1.3-1.9,2.1c-0.8,0.8-1.5,1.7-2,2.6c-0.5,0.7-1,1.5-1.5,2.4

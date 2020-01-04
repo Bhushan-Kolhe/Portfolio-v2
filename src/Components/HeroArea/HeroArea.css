@@ -1,0 +1,6 @@
+#HeroArea{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: radial-gradient(ellipse at bottom, #06A77D 0%, #090a0f 100%);
+    z-index: -1;
+}
