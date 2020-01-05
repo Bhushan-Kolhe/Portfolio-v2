@@ -58,3 +58,39 @@ h1{
     border-bottom: 1px solid rgb(172, 127, 4); 
     transform: translateY(2px);
 }
+@media(max-width: 1260px){
+    .Text-1{
+        font-size: 1.2em;
+    }
+    .Text-2{
+        font-size: 4em;
+    }
+    .Text-3{
+        font-size: 1.3em;
+        width: 65%;
+    }
+}
+@media(max-width: 775px){
+    .Text-1{
+        font-size: 1.2em;
+    }
+    .Text-2{
+        font-size: 3em;
+    }
+    .Text-3{
+        font-size: 1.3em;
+        width: 75%;
+    }
+}
+@media(max-width: 450px){
+    .Text-1{
+        font-size: 1.2em;
+    }
+    .Text-2{
+        font-size: 3em;
+    }
+    .Text-3{
+        font-size: 1.3em;
+        width: 100%;
+    }
+}
