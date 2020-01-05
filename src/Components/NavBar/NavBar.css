@@ -33,14 +33,13 @@
 }
 
 #Menu ul li a {
-    color: #fff;
+    color: #1b2735;
     text-decoration: none;
     padding: 3px;
 }
 
 #Menu ul li a:hover {
-    color: #fcba03;
-    border-bottom: 2px solid #fcba03;
+    border-bottom: 2px solid #1b2735;
 }
 
 #Logo {
@@ -49,6 +48,7 @@
 
 #Logo svg {
     position: relative;
+    stroke-width: 3;
     top: 50%;
     transform: translate(0, -50%);
 }
@@ -61,7 +61,7 @@ input {
     display: none;
 }
 
-path {
+.menu svg path {
     fill: none;
     stroke: #fcba03;
     stroke-width: 3;

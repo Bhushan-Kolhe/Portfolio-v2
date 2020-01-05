@@ -1,6 +1,60 @@
 #HeroArea{
     min-height: 100vh;
     min-width: 100vw;
-    background: radial-gradient(ellipse at bottom, #06A77D 0%, #090a0f 100%);
+    background: #f8fffd;
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.HeroContainer{
+    text-align: left;
+}
+h1{
+    margin: 0;
+}
+.RightSide img{
+    width: 300px;
+    border-radius: 100%;
+}
+.BoldText{
+    font-weight: bolder;
+}
+.Text-1{
+    color: #806e3d;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+.Text-2{
+    font-size: 6.5em;
+    margin-bottom: 25px;
+    color: #1b2735;
+}
+.Text-3{
+    margin-bottom: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    color: #055a4f;
+}
+.GetInTouch-Btn{
+    padding: 15px 40px;
+    background: transparent;
+    color: rgb(158, 117, 4);
+    border: 1.5px solid rgb(238, 175, 3);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.GetInTouch-Btn:hover{
+    color: #1b2735;
+    background: rgb(238, 175, 3);
+    border-bottom: 3px solid rgb(158, 117, 3); 
+}
+.GetInTouch-Btn:focus{
+    outline: none;
+}
+.GetInTouch-Btn:active{
+    margin-top: 2px;
+    background: rgb(207, 153, 2);
+    border-bottom: 1px solid rgb(172, 127, 4); 
+    transform: translateY(2px);
 }
