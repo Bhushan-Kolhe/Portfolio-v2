@@ -1,4 +1,5 @@
 import React from 'react';
+import MouseScroll from '../MouseScroll/MouseScroll';
 import './HeroArea.css';
 
 function HeroArea() {
@@ -13,6 +14,7 @@ function HeroArea() {
                 </h1>
                 <button className="GetInTouch-Btn">Get In Touch </button>
             </div>
+            <MouseScroll />
         </div>
     )
 }

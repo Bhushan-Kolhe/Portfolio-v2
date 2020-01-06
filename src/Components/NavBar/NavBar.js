@@ -24,9 +24,19 @@ function NavBar() {
             Logo.style.display = "block";
         }
     }
+    const HandleScroll = () => {
+        const NavBar = document.getElementById("NavBar");
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+
+        }else{
+            
+        }
+    }
+
+    window.onscroll = HandleScroll;
 
     return (
-        <div id="NavBar" className="Container Nav-Bar">
+        <div id="NavBar" className="Nav-Bar">
             <div style={LogoStyles} id="Logo">
                 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     viewBox="0 0 450 220" >

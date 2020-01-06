@@ -1,0 +1,108 @@
+.mouse-position{
+    position: fixed;
+    bottom: 40px;
+    right: 50%;
+}
+.mouse-container {
+    display: block;
+    text-align: center;
+}
+
+.mouse-container .mouse-outer {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 20px;
+    border: 2px solid #1b2735;
+    border-radius: 40px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.mouse-container .mouse-outer .mouse-wheel {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -1.6666666667px;
+    height: 10px;
+    width: 4px;
+    background-color: #1b2735;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-animation: scroll 1.4s infinite linear;
+    -moz-animation: scroll 1.4s infinite linear;
+    -o-animation: scroll 1.4s infinite linear;
+    animation: scroll 1.4s infinite linear;
+}
+
+.mouse-container .mouse-outer:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.mouse-container .mouse-outer:hover .mouse-wheel {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: scaleY(0.5) translateY(0);
+    }
+    20% {
+        transform: scaleY(1) translateY(5px);
+    }
+    60% {
+        transform: scaleY(0.5) translateY(15px);
+    }
+    to {
+        transform: scaleY(0.5) translateY(0);
+    }
+}
+
+@-o-keyframes scroll {
+    0% {
+        transform: scaleY(0.5) translateY(0);
+    }
+    20% {
+        transform: scaleY(1) translateY(5px);
+    }
+    60% {
+        transform: scaleY(0.5) translateY(15px);
+    }
+    to {
+        transform: scaleY(0.5) translateY(0);
+    }
+}
+
+@-moz-keyframes scroll {
+    0% {
+        transform: scaleY(0.5) translateY(0);
+    }
+    20% {
+        transform: scaleY(1) translateY(5px);
+    }
+    60% {
+        transform: scaleY(0.5) translateY(15px);
+    }
+    to {
+        transform: scaleY(0.5) translateY(0);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: scaleY(0.5) translateY(0);
+    }
+    20% {
+        transform: scaleY(1) translateY(5px);
+    }
+    60% {
+        transform: scaleY(0.5) translateY(15px);
+    }
+    to {
+        transform: scaleY(0.5) translateY(0);
+    }
+}
+@media(max-width: 360px){
+    .mouse-position{
+        display: none;
+    }
+}
