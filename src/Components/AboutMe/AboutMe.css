@@ -1,5 +1,23 @@
 #AboutMe{
-    min-width: 100vw;
-    min-height: 100vh;
-    background: #011627; 
+    width: 100vw;
+    height: 100vh;
+    background: #011627;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee9cf;
+}
+#AboutMe-Container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 60%;
+}
+#AboutMe-Left{
+    width: 40%;
+    height: 100%;
+}
+#AboutMe-Right{
+    width: 60%;
+    height: 100%;
 }

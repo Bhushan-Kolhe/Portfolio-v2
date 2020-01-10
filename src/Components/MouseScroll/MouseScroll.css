@@ -1,5 +1,5 @@
 .mouse-position{
-    position: fixed;
+    position: absolute;
     bottom: 40px;
     right: 50%;
 }
