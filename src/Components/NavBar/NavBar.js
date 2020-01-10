@@ -26,10 +26,20 @@ function NavBar() {
     }
     const HandleScroll = () => {
         const NavBar = document.getElementById("NavBar");
+        const NAvBarATags = document.querySelectorAll("#Menu ul li a");
+        const Logo = document.getElementById("Logo");
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-
+            NavBar.className = "Nav-Bar Nav-Bar-Scroll";
+            NAvBarATags.forEach( Tag => {
+                Tag.className = "a-OnScrollDown";
+            });
+            Logo.className = "logo-OnScrollDown";
         }else{
-            
+            NavBar.className = "Nav-Bar";
+            NAvBarATags.forEach( Tag => {
+                Tag.className = "a-OnScrollUp";
+            });
+            Logo.className = "logo-OnScrollUp";
         }
     }
 

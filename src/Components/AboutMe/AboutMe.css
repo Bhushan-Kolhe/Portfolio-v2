@@ -16,8 +16,41 @@
 #AboutMe-Left{
     width: 40%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #AboutMe-Right{
-    width: 60%;
+    width: 50%;
     height: 100%;
+}
+#AboutMe-Left img{
+    width: 300px;
+    border-radius: 50%;
+}
+#AboutMe-Title{
+    font-size: 1.6em;
+}
+#AboutMe-Body{
+    margin-top: 27px;
+    font-size: 1.2em;
+}
+#AboutMe-Quote{
+    margin-top: 30px;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #eee9cfd7;
+    font-style: oblique;
+}
+#AboutMe-Quote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 20px;
+}
+#AboutMe-Quote small{
+    color: #eee9cf7a;
 }

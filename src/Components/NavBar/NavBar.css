@@ -6,10 +6,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #fff;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1.1px;
-    padding: 30px 10%;
+    animation: navbar-scrollup-anime 0.6s ease forwards;
 }
 
 .Nav-Dark {
@@ -170,3 +169,82 @@ label:hover circle {
     }
 }
 /* Scroll CSS */
+.Nav-Bar-Scroll{
+    animation: navbar-scrolldown-anime 0.6s ease forwards;
+}
+
+#Menu ul li a.a-OnScrollDown{
+    animation: atags-scrolldown-anime 0.6s ease forwards;
+}
+
+#Menu ul li a.a-OnScrollup{
+    animation: atags-scrollup-anime 0.6s ease forwards;
+}
+#Logo.logo-OnScrollDown{
+    animation: logo-scrolldown-anime 0.6s ease forwards;
+}
+#Logo.logo-OnScrollUp{
+    animation: logo-scrollup-anime 0.6s ease forwards;
+}
+
+@keyframes navbar-scrolldown-anime{
+    from{
+        padding: 30px 10%;
+        background: transparent;
+    }
+    to{
+        padding: 5px 10%;
+        background: #011627;
+    }
+}
+
+@keyframes atags-scrolldown-anime{
+    from{
+        color: #1b2735;
+    }
+    to{
+        color: #f8fffd;
+    }
+}
+
+@keyframes logo-scrolldown-anime{
+    from{
+        margin-top: 0px;
+        width: 170px;
+    }
+    to{
+        margin-top: 5px;
+        width: 110px;
+    }
+}
+
+@keyframes navbar-scrollup-anime{
+    from{
+        padding: 5px 10%;
+        background: #011627;
+    }
+    to{
+        padding: 30px 10%;
+        background: transparent;
+    }
+}
+
+@keyframes atags-scrollup-anime{
+    from{
+        color: #f8fffd;
+    }
+    to{
+        color: #1b2735;
+    }
+}
+
+@keyframes logo-scrollup-anime{
+    from{
+        margin-top: 5px;
+        width: 110px;
+    }
+    to{
+        margin-top: 0px;
+        width: 170px;
+    }
+}

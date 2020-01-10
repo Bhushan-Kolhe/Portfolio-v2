@@ -6,7 +6,7 @@ function AboutMe() {
         <div id="AboutMe">
             <div id="AboutMe-Container">
                 <div id="AboutMe-Left">
-
+                    <img src="./img/1.png" />
                 </div>
                 <div id="AboutMe-Right">
                     <div id="AboutMe-Title">
