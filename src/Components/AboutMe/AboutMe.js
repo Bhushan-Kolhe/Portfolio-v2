@@ -1,7 +1,18 @@
 import React from 'react';
+import RandomQuotes from '../../Resources/Quotes';
+import { useState, useEffect } from 'react';
 import './AboutMe.css';
 
 function AboutMe() {
+    const [ Quote, setQuote ] = useState(RandomQuotes());
+
+    useEffect(() => {
+        setInterval(()=> {
+            const quote = RandomQuotes();
+            setQuote(quote);
+        }, 15000);
+    },[]);
+
     return (
         <div id="AboutMe">
             <div id="AboutMe-Container">
@@ -22,13 +33,11 @@ function AboutMe() {
                         the 1960s with the release of Letraset sheets
                         </p>
                     </div>
-                    <div id="AboutMe-Quote">
+                    <div id="AboutMe-Quote" className="Quote-Animation">
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a 
+                            {Quote.quote}
                         </p>
-                        <small>- Bhushan Kolhe</small>
+                        <small>- {Quote.by}</small>
                     </div>
                 </div>
             </div>

@@ -54,3 +54,24 @@
 #AboutMe-Quote small{
     color: #eee9cf7a;
 }
+#AboutMe-Quote.Quote-Animation{
+    animation: quote-anime 15s ease infinite
+}
+@keyframes quote-anime{ 
+    0%{
+        opacity: 0%;
+        transform: translate(0%, 50%);
+    }
+    5%{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+    }
+    95%{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+    }
+    100%{
+        opacity: 0%;
+        transform: translate(0%, -50%);
+    }
+}
