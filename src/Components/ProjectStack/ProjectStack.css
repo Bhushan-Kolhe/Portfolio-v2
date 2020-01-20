@@ -30,6 +30,7 @@
 }
 
 #ProjectStack-ShowMore-btn:hover{
+    padding: 20px 70px;
     border: none;
     color: #152a42;
     background: #ffbb00;
