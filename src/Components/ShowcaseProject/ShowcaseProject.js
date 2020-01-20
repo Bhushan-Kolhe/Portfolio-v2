@@ -1,10 +1,10 @@
 import React from 'react';
-import GetShowcaseProjectById from '../../Resources/Projects';
+import Projects from '../../Resources/Projects';
 import './ShowcaseProject.css';
 
 function ShowcaseProject(props) {
     const PId = props.ProjectId;
-    const Project = GetShowcaseProjectById(PId);
+    const Project = Projects.GetShowcaseProjectById(PId);
     const Img = `./img/${Project.Img}`;
     let ShowcaseProjectStyle = {};
     let ShowcaseImgStyle = {}

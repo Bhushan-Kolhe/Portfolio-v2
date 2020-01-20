@@ -23,6 +23,7 @@
 }
 
 .ShowcaseProject-GitLink{
+    border-radius: 2%;
     display: inline-block;
     text-decoration: none;
     border-bottom: 6px solid #01142b;
@@ -38,15 +39,16 @@
 }
 
 .ShowcaseProject-LiveLink{
+    border-radius: 2%;
     display: inline-block;
     text-decoration: none;
     color: #152a42;
     background: #ffbb00;
-    border-bottom: 6px solid #be8d03; 
+    border-bottom: 5px solid #be8d03; 
     padding: 0.8em 3em;
 }
 
 .ShowcaseProject-LiveLink:active{
-    border-bottom: 2px solid #ac7f04;
+    border-bottom: 1px solid #ac7f04;
     transform: translateY(4px);
 }

@@ -1,0 +1,46 @@
+#ProjectStack-Container{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(#f8fffd , #E0E5EC);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+#ProjectStack{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+    padding: 50px 0;
+}
+
+#ProjectStack-ShowMore-btn{
+    background: transparent;
+    font-weight: bolder;
+    font-size: 1.2em;
+    border: none;
+    padding: 18px 70px;
+    border-radius: 2%;
+    display: inline-block;
+    text-decoration: none;
+    color: #866404;
+    border: 3px solid #cf9903; 
+}
+
+#ProjectStack-ShowMore-btn:hover{
+    border: none;
+    color: #152a42;
+    background: #ffbb00;
+    border-bottom: 3px solid #be8d03; 
+}
+
+#ProjectStack-ShowMore-btn:focus{
+    outline: none;
+}
+
+#ProjectStack-ShowMore-btn:active{
+    border-bottom: 1px solid #ac7f04;
+    transform: translateY(4px);
+}

@@ -1,0 +1,51 @@
+.ProjectCard{
+    width: 280px;
+    height: 350px;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    color: #333;
+    background-color:rgb(240, 244, 250);
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+    animation: ProjectCard-hover-out-anime 0.5s ease forwards;
+    cursor: pointer;
+}
+
+.ProjectCard:hover{
+    animation: ProjectCard-hover-anime 0.5s ease forwards;
+}
+
+.ProjectCard-Header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ProjectCard-Header h1{
+    display: inline;
+}
+
+.ProjectCard-Links img{
+    width: 25px;
+    padding: 0 5px;
+    transform: translateY(50%);
+}
+
+@keyframes ProjectCard-hover-anime{
+    to{
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+}
+@keyframes ProjectCard-hover-out-anime{
+    from{
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+    to{
+        transform: translateY(0px) scale(1);
+    }
+}
