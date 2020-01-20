@@ -35,23 +35,23 @@ h1{
 .GetInTouch-Btn{
     padding: 15px 40px;
     background: transparent;
-    color: rgb(158, 117, 4);
-    border: 1.5px solid rgb(238, 175, 3);
+    color: #9e7504;
+    border: 1.5px solid #eeaf03;
     font-weight: bold;
     font-size: 1.1em;
 }
 .GetInTouch-Btn:hover{
     color: #1b2735;
-    background: rgb(238, 175, 3);
-    border-bottom: 3px solid rgb(158, 117, 3); 
+    background: #eeaf03;
+    border-bottom: 3px solid #9e7503; 
 }
 .GetInTouch-Btn:focus{
     outline: none;
 }
 .GetInTouch-Btn:active{
     margin-top: 2px;
-    background: rgb(207, 153, 2);
-    border-bottom: 1px solid rgb(172, 127, 4); 
+    background: #cf9902;
+    border-bottom: 1px solid #ac7f04; 
     transform: translateY(2px);
 }
 @media(max-width: 1260px){

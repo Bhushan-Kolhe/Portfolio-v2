@@ -159,6 +159,30 @@ const Quotes = [
         quote: "The ship is safest when it is in port, but that’s not what ships were built for.",
         by: "Paulo Coelho"
     },
+    {
+        quote: "You cannot always wait for the perfect time. Sometimes you must dare to jump.",
+        by: "Susie Orman Schnall"
+    },
+    {
+        quote: "Stop thinking you need a miracle. Realize that you are a miracle.",
+        by: "Mel Robbins"
+    },
+    {
+        quote: "Stay close to anything that makes you glad that you’re alive.",
+        by: "Hafiz"
+    },
+    {
+        quote: "I am more powerful than I am damaged and I will rise from any abyss you drown me in.",
+        by: "Nikita Gill"
+    },
+    {
+        quote: "Your perceived failure can become the catalyst for profound reinvention.",
+        by: "Conan O'Brien"
+    },
+    {
+        quote: "Stay close to anything that makes you glad that you’re alive.",
+        by: "Hafiz"
+    },
 
 ];
 

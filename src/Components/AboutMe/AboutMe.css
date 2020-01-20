@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #eee9cf;
+    color: #f3f0df;
 }
 #AboutMe-Container{
     display: flex;
@@ -44,6 +44,9 @@
     align-items: flex-end;
     color: #eee9cfd7;
     font-style: oblique;
+}
+#AboutMe-Quote p{
+    align-self: flex-start;
 }
 #AboutMe-Quote p:before {
     content: "\f10d";
