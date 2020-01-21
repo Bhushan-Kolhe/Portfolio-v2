@@ -1,0 +1,10 @@
+#ProgrammingSkillCard{
+    display: inline-block;
+    color: #4a5568;
+    width: 310px;
+    padding: 40px 40px 0px;
+    border-radius: 10px;
+    background: #f5f6f7;
+    text-align: center;
+    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA;
+}

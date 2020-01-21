@@ -4,6 +4,7 @@ import ProjectStack from '../ProjectStack/ProjectStack';
 import './Projects.css';
 
 function Projects() {
+
     return (
         <div id="Projects">
             <Showcase />
