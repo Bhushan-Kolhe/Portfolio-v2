@@ -7,6 +7,9 @@ function Projects() {
 
     return (
         <div id="Projects">
+            <div id="Projects-Title">
+                <h1>Projects</h1>
+            </div>
             <Showcase />
             <ProjectStack />
         </div>

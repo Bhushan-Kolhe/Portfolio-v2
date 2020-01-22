@@ -3,10 +3,25 @@
     min-height: 100vh;
     background: linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 75px;
+}
+
+#Skills-Title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#Skills-Title h1{
+    font-size: 4em;
+    color: #394150;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .1), 
+               -5px -5px 10px rgba(255, 255, 255, 1);
 }
 
 #Skills-grid{

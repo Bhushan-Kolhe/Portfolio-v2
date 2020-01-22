@@ -6,7 +6,7 @@
     flex-direction: column;
     padding: 25px;
     color: #333;
-    background-color:rgb(240, 244, 250);
+    background-color:#f0f4fa;
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
     animation: ProjectCard-hover-out-anime 0.5s ease forwards;
     cursor: pointer;

@@ -16,6 +16,7 @@
     padding: 50px 0;
 }
 
+/*
 #ProjectStack-ShowMore-btn{
     background: transparent;
     font-weight: bolder;
@@ -44,4 +45,28 @@
 #ProjectStack-ShowMore-btn:active{
     border-bottom: 1px solid #ac7f04;
     transform: translateY(4px);
+}
+*/
+
+#ProjectStack-ShowMore-btn{
+    outline: none;
+    color: #4a5568;
+    padding: 20px 40px;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    background: #f0f4fa;
+    box-shadow: 6px 6px 20px rgba(0,0,0,.1), 
+            -6px -6px 20px rgba(243, 242, 242, 0.493);
+}
+
+#ProjectStack-ShowMore-btn:hover{
+    cursor: pointer;
+    box-shadow: 6px 6px 20px rgba(0,0,0,.1), 
+            -6px -6px 20px rgba(224, 222, 222, 0.767);
+}
+
+#ProjectStack-ShowMore-btn:active{
+     box-shadow: inset 7px 7px 20px rgba(0, 0, 0, 0.13), 
+           inset -7px -7px 20px rgba(255, 255, 255, 0.74);
 }

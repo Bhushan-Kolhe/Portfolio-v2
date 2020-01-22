@@ -1,18 +1,16 @@
-#Projects{
+#WhyWorkWithMe-Section{
     width: 100vw;
-    min-height: 100vh;
-    background: #f8fffd;
+    background: #f5f6f7;
 }
 
-#Projects-Title{
+#WhyWorkWithMe-Title{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
 }
 
-#Projects-Title h1{
+#WhyWorkWithMe-Title h1{
     font-size: 4em;
     color: #394150;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, .1), 

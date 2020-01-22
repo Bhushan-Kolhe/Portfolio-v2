@@ -4,6 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import AboutMe from '../AboutMe/AboutMe';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
+import WhyWorkWithMe from '../WhyWorkWithMe/WhyWorkWithMe';
 import './HomePage.css';
 
 function HomePage() {
@@ -14,6 +15,7 @@ function HomePage() {
             <AboutMe />
             <Projects />
             <Skills />
+            <WhyWorkWithMe />
         </div>
     )
 }

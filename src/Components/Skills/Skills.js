@@ -7,6 +7,9 @@ import './Skills.css';
 function Skills() {
     return (
         <div id="Skills-Container">
+            <div id="Skills-Title">
+                <h1>SKILLS</h1>
+            </div>
             <div id="Skills-grid">
                 <DesignSkillCard />
                 <DevelopmentSkillCard />
