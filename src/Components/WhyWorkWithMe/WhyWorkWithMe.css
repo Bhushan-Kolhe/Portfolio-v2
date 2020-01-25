@@ -1,6 +1,7 @@
 #WhyWorkWithMe-Section{
     width: 100vw;
     background: #f5f6f7;
+    padding: 50px 0;
 }
 
 #WhyWorkWithMe-Title{
@@ -15,4 +16,18 @@
     color: #394150;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, .1), 
                -5px -5px 10px rgba(255, 255, 255, 1);
+}
+
+#WhyWorkWithMe-Body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+#WhyWorkWithMe-Grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 70px;
 }

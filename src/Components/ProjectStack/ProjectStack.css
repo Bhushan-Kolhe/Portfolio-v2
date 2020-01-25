@@ -50,18 +50,20 @@
 
 #ProjectStack-ShowMore-btn{
     outline: none;
-    color: #4a5568;
+    color: #966f05;
     padding: 20px 40px;
     border: none;
     font-size: 1.5em;
     border-radius: 20px;
     background: #f0f4fa;
+    border: 2px solid #f0f4fa;
     box-shadow: 6px 6px 20px rgba(0,0,0,.1), 
             -6px -6px 20px rgba(243, 242, 242, 0.493);
 }
 
 #ProjectStack-ShowMore-btn:hover{
     cursor: pointer;
+    border: 2px solid #e6a800;
     box-shadow: 6px 6px 20px rgba(0,0,0,.1), 
             -6px -6px 20px rgba(224, 222, 222, 0.767);
 }

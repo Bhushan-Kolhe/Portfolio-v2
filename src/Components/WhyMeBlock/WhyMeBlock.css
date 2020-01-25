@@ -1,0 +1,20 @@
+.WhyMeBlock{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    text-align: center;
+}
+
+.WhyMeBlock-Head img{
+    width: 100px;
+    padding-bottom: 15px;
+}
+
+.WhyMeBlock-Head h1{
+    color: #394150;
+}
+
+.WhyMeBlock-Body{
+    color: #282e38;
+    font-size: 1.2em;
+}
