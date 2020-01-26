@@ -5,6 +5,9 @@ import './ContactMe.css';
 function ContactMe() {
     return (
         <div id="ContactMe">
+            <div id="ContactMe-Title">
+                <h1>Contact Me</h1>
+            </div>
             <div id="ContactMe-Card">
                 <div id="ContactMe-Card-Top">
                     <div id="ContactMe-Card-Top-Left">

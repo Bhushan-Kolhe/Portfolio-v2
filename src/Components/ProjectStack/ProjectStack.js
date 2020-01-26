@@ -7,7 +7,7 @@ import './ProjectStack.css';
 
 function ProjectStack() {
     const ProjectsList = Projects.GetProjects();
-    const [ ProjectsDisplayed, SetProjectsDisplayed ] = useState(6);
+    const [ ProjectsDisplayed, SetProjectsDisplayed ] =  useState(6);
     let ProjectToBeDisplayed = ProjectsList.slice(0,ProjectsDisplayed);
 
     const HandleClickShowMore = () => {

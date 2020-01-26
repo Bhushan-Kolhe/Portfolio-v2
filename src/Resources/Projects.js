@@ -11,7 +11,8 @@ const Projects = [
         OnShowcase: true,
         ShowcaseId: 0,
         HasImages: true,
-        Img: "2.png"
+        Img: "2.png",
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },
     {
         Title: "Nikita Gill",
@@ -25,7 +26,8 @@ const Projects = [
         OnShowcase: true,
         ShowcaseId: 1,
         HasImages: true,
-        Img: "2.png"
+        Img: "2.png",
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },
     {
         Title: "Nikita Gill",
@@ -39,7 +41,8 @@ const Projects = [
         OnShowcase: true,
         ShowcaseId: 2,
         HasImages: true,
-        Img: "2.png"
+        Img: "2.png",
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },
     {
         Title: "Nikita Gill",
@@ -51,6 +54,19 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
+    },
+    {
+        Title: "Nikita Gill",
+        Desc: `Within you is a light that is brighter than the belittling words 
+            of those who are afraid of your potential. Wit potential. Wit potential. Wit potential. Within you is an entire 
+            universe, just waiting to be built.`,
+        HasGit: true,
+        GitLink: "https://github.com/chocoholic-me/GitProfile",
+        HasLink: true,
+        Link: "https://git--profile.herokuapp.com/",
+        OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },
     {
         Title: "Nikita Gill",
@@ -62,6 +78,7 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },
     {
         Title: "Nikita Gill",
@@ -73,6 +90,7 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },
     {
         Title: "Nikita Gill",
@@ -84,6 +102,7 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },
     {
         Title: "Nikita Gill",
@@ -95,17 +114,7 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
-    },
-    {
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
-        HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
-        HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
-        OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },{
         Title: "Nikita Gill",
         Desc: `Within you is a light that is brighter than the belittling words 
@@ -116,6 +125,7 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     }
     ,{
         Title: "Nikita Gill",
@@ -127,6 +137,7 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     }
     ,{
         Title: "Nikita Gill",
@@ -138,6 +149,7 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     },
     {
         Title: "Nikita Gill",
@@ -149,6 +161,7 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
+        Stack: ["HTML", "CSS", "MangoDB", "React"]
     }
 
 ];
