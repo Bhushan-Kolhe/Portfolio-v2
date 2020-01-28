@@ -27,9 +27,9 @@
 #ContactMe-Card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 40px 60px;
+    padding: 40px 40px 0px;
     background: #f5f6f7;
     border-radius: 10px;
     text-align: center;
@@ -101,5 +101,10 @@
 
 #ContactMe-Card-Bottom{
     width: 100%;
-    text-align: left;
+    text-align: center;
+}
+
+#ContactMe-Card-Bottom h4{
+    margin-bottom: 7px;
+    color: #778296;
 }

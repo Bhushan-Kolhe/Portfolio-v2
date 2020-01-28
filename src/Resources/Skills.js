@@ -16,7 +16,7 @@ const SkillList = {
             "AJAX"
         ],
         BackEnd: [
-            "Nade.js",
+            "Node.js",
             "Express.js",
             "Restify",
             "PHP",
