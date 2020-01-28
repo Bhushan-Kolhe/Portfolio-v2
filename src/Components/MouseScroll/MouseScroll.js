@@ -1,15 +1,18 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import './MouseScroll.css'
 
 function MouseScroll() {
     return (
-        <div className="mouse-position">  
-            <div className="mouse-container">
-                <span className="mouse-outer">
-                <span className="mouse-wheel"></span>
-                </span>
+        <Fade bottom delay={200} cascade delay={1600} distance={"60%"}>
+            <div className="mouse-position">  
+                <div className="mouse-container">
+                    <span className="mouse-outer">
+                    <span className="mouse-wheel"></span>
+                    </span>
+                </div>
             </div>
-        </div>
+        </Fade>
     )
 }
 

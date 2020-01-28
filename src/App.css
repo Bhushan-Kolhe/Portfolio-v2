@@ -5,3 +5,11 @@ html{
   width: 100vw;
   overflow-x: hidden;
 }
+
+.App:-webkit-scrollbar {
+  display: none;
+}
+
+.App{
+  -ms-overflow-style: none;
+}

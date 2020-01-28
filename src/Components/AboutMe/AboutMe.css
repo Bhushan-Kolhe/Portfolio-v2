@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #e4e1d0;
+    color: #f0f8ffe7;
 }
 #AboutMe-Container{
     display: flex;
@@ -26,7 +26,7 @@
     height: 100%;
 }
 #AboutMe-Left img{
-    width: 300px;
+    width: 500px;
     border-radius: 50%;
 }
 #AboutMe-Title{
@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    color: #eee9cfd7;
+    color: #c1cad3;
     font-style: oblique;
 }
 #AboutMe-Quote p{
@@ -55,7 +55,7 @@
     margin-right: 20px;
 }
 #AboutMe-Quote small{
-    color: #eee9cf7a;
+    color: #97a0a7;
 }
 #AboutMe-Quote.Quote-Animation{
     animation: quote-anime 15s ease infinite

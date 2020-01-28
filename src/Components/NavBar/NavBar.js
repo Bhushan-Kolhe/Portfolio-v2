@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import './NavBar.css';
 
 function NavBar() {
@@ -47,6 +48,7 @@ function NavBar() {
 
     return (
         <div id="NavBar" className="Nav-Bar">
+            <Fade bottom delay={200} delay={200} distance={"60%"}>
             <div style={LogoStyles} id="Logo">
                 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     viewBox="0 0 450 220" >
@@ -220,14 +222,17 @@ function NavBar() {
                 </g>
                 </svg>
             </div>
+            </Fade>
             <div id="Menu">
-                <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <li id="Resume"><a href="#">Resume</a></li>
-                </ul>
+                <Fade bottom cascade delay={500} distance={"200%"}>
+                    <ul>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                        <li id="Resume"><a href="#">Resume</a></li>
+                    </ul>
+                </Fade>
                 <div className="menu cross menu--2">
                     <label>
                     <input onClick={HandleMenuCrossClick}  type="checkbox" />

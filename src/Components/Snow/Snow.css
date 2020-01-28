@@ -5,6 +5,7 @@
     right: 0;
     bottom: 0;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    z-index: 999;
 }
 .snow {
     position: absolute;

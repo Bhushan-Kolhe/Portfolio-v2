@@ -1,5 +1,6 @@
 #Loader{
     animation: loader-fill-anime 1s ease forwards 5s;
+    z-index: 999;
 }
 @keyframes loader-fill-anime{
     to{
