@@ -5,13 +5,13 @@ import './WhyMeBlock.css';
 function WhyMeBlock(props) {
     const Data = props.Data;
     const img = `./img/${Data.img}`;
-    const DelayIndex = props.DelayIndex;
+    
     return (
         <div className="WhyMeBlock">
             <div className="WhyMeBlock-Head">
                 <Fade bottom distance={"60%"}>
                     <div>
-                        <img src={img}></img>
+                        <img src={img} alt="Why Me Icon"></img>
                     </div>
                 </Fade>
                 <Fade bottom distance={"60%"}>

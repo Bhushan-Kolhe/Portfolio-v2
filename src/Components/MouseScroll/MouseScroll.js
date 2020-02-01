@@ -4,7 +4,7 @@ import './MouseScroll.css'
 
 function MouseScroll() {
     return (
-        <Fade bottom delay={200} cascade delay={1600} distance={"60%"}>
+        <Fade bottom cascade delay={1600} distance={"60%"}>
             <div className="mouse-position">  
                 <div className="mouse-container">
                     <span className="mouse-outer">

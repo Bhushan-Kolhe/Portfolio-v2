@@ -58,7 +58,7 @@
     color: #97a0a7;
 }
 #AboutMe-Quote.Quote-Animation{
-    animation: quote-anime 15s ease infinite
+    animation: quote-anime 10s ease infinite
 }
 @keyframes quote-anime{ 
     0%{

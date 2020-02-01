@@ -8,12 +8,13 @@
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1.1px;
-    animation: navbar-scrollup-anime 0.6s ease forwards;
     z-index: 1;
+    padding: 2vh 10%;
+    background: transparent;
 }
 
 .Nav-Dark {
-    background: #131313d8;
+    background: #011627;
     animation: menu-anime 1s ease forwards;
 }
 
@@ -22,10 +23,18 @@
     margin: auto;
 }
 
+#Menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #Menu ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    text-align: center;
+    transform: translateY(-30%);
 }
 
 #Menu ul li {
@@ -39,18 +48,17 @@
 }
 
 #Menu ul li a:hover {
-    border-bottom: 2px solid #1b2735;
+    color: #daa104;
 }
 
 #Logo {
-    width: 170px;
+    width: 12vw;
 }
 
 #Logo svg {
     position: relative;
     stroke-width: 3;
     top: 50%;
-    transform: translate(0, -50%);
 }
 
 .menu {
@@ -121,26 +129,36 @@ label:hover circle {
 }
 
 @media(max-width: 1000px) {
-    .Nav-Bar {
-        padding: 0 10%;
+    .Nav-Bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3vh 0 0 0vh;
+        background: #011627;
+        width: 100%;
+        margin: 0;
     }
     .menu {
         display: block;
-        position: fixed;
-        top: 15px;
-        right: 10%;
-        width: 50px;
-        height: 50px;
+        width: 5vw;
+        justify-self: end;
+        align-self: start;
+        padding-right: 5vw;
+        padding-bottom: 1vh;
     }
     #Logo {
-        margin-top: 15px;
+        width: 10vw;
+        padding-left: 5vh;
+         
     }
     #Menu {
-        width: 100%;
+        display: grid;
+        grid-template-columns: 80vw 20vw;
     }
     #Menu ul {
         flex-direction: column;
         display: none;
+        transform: translateY(0%);
     }
     #Menu ul li {
         padding: 5px;
@@ -170,8 +188,12 @@ label:hover circle {
     }
 }
 /* Scroll CSS */
-.Nav-Bar-Scroll{
+.Nav-Bar-ScrollDown{
     animation: navbar-scrolldown-anime 0.6s ease forwards;
+}
+
+.Nav-Bar-ScrollUp{
+    animation: navbar-scrollup-anime 0.6s ease forwards;
 }
 
 #Menu ul li a.a-OnScrollDown{
@@ -188,13 +210,21 @@ label:hover circle {
     animation: logo-scrollup-anime 0.6s ease forwards;
 }
 
+#Menu ul.ul-OnScrollDown{
+    animation: ul-scrolldown-anime 0.6s ease forwards;
+}
+
+#Menu ul.ul-OnScrollUp{
+    animation: ul-scrollup-anime 0.6s ease forwards;
+}
+
 @keyframes navbar-scrolldown-anime{
     from{
-        padding: 30px 10%;
+        padding: 2vh 10%;
         background: transparent;
     }
     to{
-        padding: 5px 10%;
+        padding: 0vh 10%;
         background: #011627;
     }
 }
@@ -210,22 +240,30 @@ label:hover circle {
 
 @keyframes logo-scrolldown-anime{
     from{
-        margin-top: 0px;
-        width: 170px;
+        transform: translateY(0%);
+        width: 12vw;
     }
     to{
-        margin-top: 5px;
-        width: 110px;
+        transform: translateY(15%);
+        width: 7vw;
+    }
+}
+@keyframes ul-scrolldown-anime{
+    from{
+        transform: translateY(-30%);
+    }
+    to{
+        transform: translateY(10%);
     }
 }
 
 @keyframes navbar-scrollup-anime{
     from{
-        padding: 5px 10%;
+        padding: 0vh 10%;
         background: #011627;
     }
     to{
-        padding: 30px 10%;
+        padding: 2vh 10%;
         background: transparent;
     }
 }
@@ -242,10 +280,19 @@ label:hover circle {
 @keyframes logo-scrollup-anime{
     from{
         margin-top: 5px;
-        width: 110px;
+        width: 7vw;
+    }
+    to{ 
+        margin-top: 0px;
+        width: 12vw;
+    }
+}
+
+@keyframes ul-scrollup-anime{
+    from{
+        transform: translateY(10%);
     }
     to{
-        margin-top: 0px;
-        width: 170px;
+        transform: translateY(-30%);
     }
 }

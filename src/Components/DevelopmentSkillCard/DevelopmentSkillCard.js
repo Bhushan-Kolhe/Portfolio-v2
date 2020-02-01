@@ -12,7 +12,7 @@ function DevelopmentSkillCard() {
             <div>
                 <div id="DevelopmentSkillCard">
                     <div className="SkillCard-Title">
-                        <img src="./img/programming.svg"></img>
+                        <img src="./img/programming.svg" alt="Icon"></img>
                         <h1> Development </h1>
                     </div>
                     <div className="SkillCard-Section">

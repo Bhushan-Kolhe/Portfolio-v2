@@ -11,7 +11,7 @@ function DesignSkillCard() {
         <Fade bottom delay={300} distance={"60%"}>
             <div id="DesignSkillCard">
                 <div className="SkillCard-Title">
-                    <img src="./img/design.svg"></img>
+                    <img src="./img/design.svg" alt="Icon"></img>
                     <h1> Design </h1>
                 </div>
                 <div className="SkillCard-Section">

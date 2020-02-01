@@ -15,9 +15,9 @@ function WhyWorkWithMe() {
             </Fade>
             <div id="WhyWorkWithMe-Body">
                     <div id="WhyWorkWithMe-Grid">
-                        <WhyMeBlock delayIndex={1} key={uuid.v4()} Data={WhyMe[0]} />
-                        <WhyMeBlock delayIndex={2} key={uuid.v4()} Data={WhyMe[1]} />
-                        <WhyMeBlock delayIndex={3} key={uuid.v4()} Data={WhyMe[2]} />
+                        <WhyMeBlock key={uuid.v4()} Data={WhyMe[0]} />
+                        <WhyMeBlock key={uuid.v4()} Data={WhyMe[1]} />
+                        <WhyMeBlock key={uuid.v4()} Data={WhyMe[2]} />
                     </div>  
             </div>
         </div>

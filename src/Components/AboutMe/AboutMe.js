@@ -1,25 +1,27 @@
 import React from 'react';
 import RandomQuotes from '../../Resources/Quotes';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import './AboutMe.css';
 
 function AboutMe() {
     const [ Quote, setQuote ] = useState(RandomQuotes());
 
-    useEffect(() => {
+    const OnReveal = () => {
         setInterval(()=> {
             const quote = RandomQuotes();
             setQuote(quote);
-        }, 15000);
-    },[]);
+        }, 10000);
+    }
+
+
 
     return (
         <div id="AboutMe">
-            <Fade bottom cascade distance={"60%"}>
+            <Fade onReveal={OnReveal} bottom cascade distance={"60%"}>
                 <div id="AboutMe-Container">
                     <div id="AboutMe-Left">
-                        <img src="./img/1.png" />
+                        <img src="./img/1.png" alt="My Illustration" />
                     </div>
                     <div id="AboutMe-Right">
                         <div id="AboutMe-Title">

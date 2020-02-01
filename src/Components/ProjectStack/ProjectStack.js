@@ -17,11 +17,12 @@ function ProjectStack() {
     const HandleClickShowMore = () => {
         if(ProjectsList.length > ProjectsDisplayed + 6)
             SetProjectsDisplayed(ProjectsDisplayed + 6);
-        else if(ProjectsList.length == ProjectsDisplayed)
+        else if(ProjectsList.length === ProjectsDisplayed)
             SetProjectsDisplayed(6);
         else
         SetProjectsDisplayed(ProjectsList.length);
         ProjectToBeDisplayed=ProjectsList.slice(0,ProjectsDisplayed);
+        return;
     }
 
     return (
@@ -29,7 +30,7 @@ function ProjectStack() {
             <div id="ProjectStack">
                 {ProjectToBeDisplayed.map(Element => <ProjectCard delay={delay()} key={uuid.v4()} Project={Element} />)}
             </div>
-            <button onClick={HandleClickShowMore} id="ProjectStack-ShowMore-btn"> {ProjectsList.length == ProjectsDisplayed ? "Show Less!": "Show More!"} </button>
+            <button onClick={HandleClickShowMore} id="ProjectStack-ShowMore-btn"> {ProjectsList.length === ProjectsDisplayed ? "Show Less!": "Show More!"} </button>
         </div>
     )
 }

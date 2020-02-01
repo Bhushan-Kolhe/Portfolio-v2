@@ -9,7 +9,7 @@ function ShowcaseProject(props) {
     const Img = `./img/${Project.Img}`;
     let ShowcaseProjectStyle = {};
     let ShowcaseImgStyle = {}
-    if(PId%2 != 0){
+    if(PId%2 !== 0){
         ShowcaseProjectStyle = {
             flexDirection: "row-reverse",
             transform: "translateX(10px)"
@@ -23,7 +23,7 @@ function ShowcaseProject(props) {
         <Fade bottom cascade distance={"40%"}>
             <div className="ShowcaseProject" style={ShowcaseProjectStyle}>
                 <div className="ShowcaseProject-Img-Container">
-                    <img style={ShowcaseImgStyle} src={Img} />
+                    <img style={ShowcaseImgStyle} src={Img} alt="Project Images" />
                 </div>
                 <Fade bottom cascade delay={200} >
                     <div className="ShowcaseProject-Desc">

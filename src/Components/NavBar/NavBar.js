@@ -12,6 +12,7 @@ function NavBar() {
     }
     const HandleMenuCrossClick = () => {
         const NavBar = document.getElementById("NavBar");
+        const Menu = document.getElementById("Menu");
         const MenuElements = document.querySelector("#Menu ul");
         const Logo = document.getElementById("Logo");
         ToggleMenu = ! ToggleMenu;
@@ -19,28 +20,38 @@ function NavBar() {
             NavBar.className = "Nav-Bar Nav-Dark";
             MenuElements.style.display = 'block';
             Logo.style.display = "none";
+            NavBar.style.justifyContent = "center"
+            NavBar.style.paddingTop = "0";
+            Menu.style.width = "100%"
         }else {
             NavBar.className = "Container Nav-Bar";
             MenuElements.style.display = 'none';
             Logo.style.display = "block";
+            NavBar.style.paddingTop = "3vh";
+            NavBar.style.justifyContent = "space-between";
+            Menu.style.width = "auto"
         }
     }
     const HandleScroll = () => {
         const NavBar = document.getElementById("NavBar");
         const NAvBarATags = document.querySelectorAll("#Menu ul li a");
+        const Ul = document.querySelector("#Menu ul");
         const Logo = document.getElementById("Logo");
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            NavBar.className = "Nav-Bar Nav-Bar-Scroll";
+        if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && document.body.offsetWidth > 1000) {
+            NavBar.className = "Nav-Bar Nav-Bar-ScrollDown";
+            Logo.className = "logo-OnScrollDown";
             NAvBarATags.forEach( Tag => {
                 Tag.className = "a-OnScrollDown";
             });
-            Logo.className = "logo-OnScrollDown";
-        }else{
-            NavBar.className = "Nav-Bar";
+            Ul.className = "ul-OnScrollDown";
+        }else if( document.body.offsetWidth > 1000 ){
+            NavBar.className = "Nav-Bar Nav-Bar-ScrollUp";
+            Logo.className = "logo-OnScrollUp";
             NAvBarATags.forEach( Tag => {
                 Tag.className = "a-OnScrollUp";
             });
-            Logo.className = "logo-OnScrollUp";
+            Ul.className = "ul-OnScrollUp";
+            
         }
     }
 
@@ -49,6 +60,7 @@ function NavBar() {
     return (
         <div id="NavBar" className="Nav-Bar">
             <Fade bottom delay={200} delay={200} distance={"60%"}>
+            <div>
             <div style={LogoStyles} id="Logo">
                 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     viewBox="0 0 450 220" >
@@ -221,6 +233,7 @@ function NavBar() {
                     </g>
                 </g>
                 </svg>
+            </div>
             </div>
             </Fade>
             <div id="Menu">

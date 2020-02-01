@@ -30,7 +30,7 @@ function ContactMe() {
                                         const icon = `./img/${Element.icon}`
                                         return (
                                             <a key={uuid.v4()} href={Element.link}>
-                                                <img src={icon}></img>
+                                                <img src={icon} alt="Social Icon"></img>
                                             </a>
                                         )
                                     }) 
@@ -44,7 +44,7 @@ function ContactMe() {
                 <div id="ContactMe-Card-Bottom">
                     <Fade delay={1200} cascade>
                         <h4>
-                            Designed and Developed by &#9400; Bhushan Kolhe
+                            Designed and Developed by &copy;Bhushan Kolhe
                         </h4>
                     </Fade>
                 </div>
