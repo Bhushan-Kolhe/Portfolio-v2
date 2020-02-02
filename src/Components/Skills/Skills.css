@@ -27,7 +27,7 @@
 #Skills-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 50px;
+    grid-column-gap: 5vw;
     align-items: start;
 }
 
@@ -57,4 +57,101 @@
 
 .SkillCard-Section-list{
     padding-left: 20px;
+}
+
+@media(max-width: 1200px){
+    #Skills-grid{
+        column-gap: 2vw;
+    }
+    .SkillCard-Title h1{
+        font-size: 1.4em;
+    }
+    .SkillCard-Title img{
+        width: 25px;
+    }
+    .SkillCard-Section-Title{
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 800px){
+    #Skills-Title h1{
+        font-size: 4em;
+    }
+    #Skills-grid{
+        grid-template-columns: 1fr;
+        row-gap: 3vh;
+    }
+    .SkillCard-Title h1{
+        font-size: 2em;
+    }
+    .SkillCard-Title img{
+        width: 40px;
+    }
+    .SkillCard-Section-Title{
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 400px){
+    .SkillCard-Title h1{
+        font-size: 1.4em;
+    }
+    .SkillCard-Title img{
+        width: 25px;
+    }
+    .SkillCard-Section-Title{
+        font-size: 0.8em;
+    }
+}
+
+@media(min-width: 2560px){
+    #Skills-Title h1{
+        font-size: 5.5em;
+    }
+    #Skills-grid{
+        column-gap: 4vw;
+    }
+    .SkillCard-Title h1{
+        font-size: 3em;
+    }
+    .SkillCard-Title img{
+        width: 2vw;
+    }
+    .SkillCard-Section-Title{
+        font-size: 1.5em;
+    }
+    .SkillCard-Section-list{
+        font-size: 1.8em;
+    }
+}
+
+@media(min-width: 3840px){
+    #Skills-Title h1{
+        font-size: 9em;
+    }
+    .SkillCard-Title h1{
+        font-size: 4.2em;
+    }
+    .SkillCard-Section-Title{
+        font-size: 2.5em;
+    }
+    .SkillCard-Section-list{
+        font-size: 2.8em;
+    }
+}
+
+@media(min-width: 7680px){
+    #Skills-Title h1{
+        font-size: 18em;
+    }
+    .SkillCard-Title h1{
+        font-size: 8.2em;
+    }
+    .SkillCard-Section-Title{
+        font-size: 4em;
+    }
+    .SkillCard-Section-list{
+        font-size: 4.6em;
+    }
 }

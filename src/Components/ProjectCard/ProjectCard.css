@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 5vh;
 }
 
 .ProjectCard-Header img{
@@ -38,6 +38,11 @@
     width: 25px;
     padding: 0 5px;
     transform: translateY(50%);
+    animation: Link-hover-out-anime 0.5s ease forwards;
+}
+
+.ProjectCard-Links img:hover{
+    animation: Link-hover-anime 0.5s ease forwards;
 }
 
 .ProjectCard-Footer{
@@ -46,6 +51,21 @@
 
 .ProjectCard-Footer span{
     margin-right: 10px;
+}
+
+@keyframes Link-hover-anime{
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes Link-hover-out-anime{
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 @keyframes ProjectCard-hover-anime{
@@ -61,5 +81,60 @@
     }
     to{
         transform: translateY(0px) scale(1);
+    }
+}
+
+@media(max-width: 350px){
+    .ProjectCard{
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media(min-width: 2560px){
+    .ProjectCard{
+        width: 35vh;
+        height: 45vh;
+        padding: 4vh;
+    }
+    .ProjectCard-Header img{
+        width: 5vw;
+        padding: 0 1vh;
+    }
+    .ProjectCard-Links img{
+        width: 2vw;
+    }
+    .ProjectCard-Body h1{
+        font-size: 4em;
+    }
+    .ProjectCard-Body p{
+        font-size: 1.6em;
+    }
+    .ProjectCard-Footer span{
+        font-size: 1.6em;
+    }
+}
+
+@media(min-width: 3840px){
+    .ProjectCard-Body h1{
+        font-size: 6em;
+    }
+    .ProjectCard-Body p{
+        font-size: 2.6em;
+    }
+    .ProjectCard-Footer span{
+        font-size: 2.6em;
+    }
+}
+
+@media(min-width: 7680px){
+    .ProjectCard-Body h1{
+        font-size: 12em;
+    }
+    .ProjectCard-Body p{
+        font-size: 5.2em;
+    }
+    .ProjectCard-Footer span{
+        font-size: 5.2em;
     }
 }

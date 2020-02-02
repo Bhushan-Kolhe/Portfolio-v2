@@ -23,11 +23,11 @@ h1{
 }
 .Text-2{
     font-size: 6.5em;
-    margin-bottom: 25px;
+    margin-bottom: 1.5vh;
     color: #1b2735;
 }
 .Text-3{
-    margin-bottom: 50px;
+    margin-bottom: 2vh;
     width: 50%;
     font-size: 1.5em;
     color: #055a4f;
@@ -66,7 +66,39 @@ h1{
         width: 65%;
     }
 }
-@media(max-width: 775px){
+@media(min-width: 2560px){
+    .Text-1{
+        font-size: 1.8em;
+    }
+    .Text-2{
+        font-size: 6em;
+    }
+    .Text-3{
+        font-size: 2.6em;
+        width: 65%;
+    }
+    .GetInTouch-Btn{
+        padding: 1vh 3vh;
+        font-size: 2em;
+    }
+}
+@media(min-width: 3840px){
+    .Text-1{
+        font-size: 4em;
+    }
+    .Text-2{
+        font-size: 8em;
+    }
+    .Text-3{
+        font-size: 5em;
+        width: 65%;
+    }
+    .GetInTouch-Btn{
+        padding: 1vh 3vh;
+        font-size: 4em;
+    }
+}
+@media(max-width: 800px){
     .Text-1{
         font-size: 1.2em;
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Projects from '../../Resources/Projects';
-import './ShowcaseProject.css';
 import Fade from 'react-reveal/Fade';
+import './ShowcaseProject.css';
 
 function ShowcaseProject(props) {
     const PId = props.ProjectId;
@@ -9,7 +9,7 @@ function ShowcaseProject(props) {
     const Img = `./img/${Project.Img}`;
     let ShowcaseProjectStyle = {};
     let ShowcaseImgStyle = {}
-    if(PId%2 !== 0){
+    if(PId%2 !== 0 && document.body.offsetWidth > 1000){
         ShowcaseProjectStyle = {
             flexDirection: "row-reverse",
             transform: "translateX(10px)"
@@ -29,12 +29,18 @@ function ShowcaseProject(props) {
                     <div className="ShowcaseProject-Desc">
                         <h1>{Project.Title}</h1>
                         <p>{Project.Desc}</p>
-                        <Fade bottom cascade delay={300} >
                             <div className="ShowcaseProject-Links">
+                                <Fade bottom delay={200} >
+                                <div>
                                 <a className="ShowcaseProject-GitLink" href={Project.GitLink}> Github </a>
+                                </div>
+                                </Fade>
+                                <Fade bottom  delay={350} >
+                                <div>
                                 <a className="ShowcaseProject-LiveLink" href={Project.Link}> Live Version </a>
+                                </div>
+                                </Fade>
                             </div>
-                        </Fade>
                     </div>
                 </Fade>
             </div>

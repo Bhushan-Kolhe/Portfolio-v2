@@ -6,14 +6,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px 0;
+    padding: 5vh 0;
 }
 #ProjectStack{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 45px;
-    grid-row-gap: 45px;
-    padding: 50px 0;
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vw;
+    padding: 5vh 0;
 }
 
 /*
@@ -51,7 +51,7 @@
 #ProjectStack-ShowMore-btn{
     outline: none;
     color: #966f05;
-    padding: 20px 40px;
+    padding: 2vh 3vw;
     border: none;
     font-size: 1.5em;
     border-radius: 20px;
@@ -63,7 +63,7 @@
 
 #ProjectStack-ShowMore-btn:hover{
     cursor: pointer;
-    border: 2px solid #e6a800;
+    border: 2px solid #fff;
     box-shadow: 6px 6px 20px rgba(0,0,0,.1), 
             -6px -6px 20px rgba(224, 222, 222, 0.767);
 }
@@ -71,4 +71,38 @@
 #ProjectStack-ShowMore-btn:active{
      box-shadow: inset 7px 7px 20px rgba(0, 0, 0, 0.13), 
            inset -7px -7px 20px rgba(255, 255, 255, 0.74);
+}
+
+@media(max-width: 1200px){
+    #ProjectStack{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 800px){
+
+}
+
+@media(max-width: 500px){
+    #ProjectStack{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width: 2560px){
+    #ProjectStack-ShowMore-btn{
+        font-size: 2em;
+    }
+}
+
+@media(min-width: 3840px){
+    #ProjectStack-ShowMore-btn{
+        font-size: 3.5em;
+    }
+}
+
+@media(min-width: 7680px){
+    #ProjectStack-ShowMore-btn{
+        font-size: 7em;
+    }
 }

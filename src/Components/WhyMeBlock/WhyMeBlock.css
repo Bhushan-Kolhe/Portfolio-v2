@@ -18,3 +18,72 @@
     color: #282e38;
     font-size: 1.2em;
 }
+
+@media(max-width: 1200px){
+    .WhyMeBlock{
+        width: 250px;
+    }
+    .WhyMeBlock-Head img{
+        width: 80px;
+    }
+    .WhyMeBlock-Body{
+        font-size: 1.3em;
+    }
+}
+
+@media(max-width: 800px){
+    .WhyMeBlock{
+        width: 350px;
+    }
+    .WhyMeBlock-Head img{
+        width: 120px;
+    }
+}
+
+@media(max-width: 500px){
+    .WhyMeBlock{
+        width: 250px;
+    }
+    .WhyMeBlock-Head img{
+        width: 80px;
+    }
+    .WhyMeBlock-Head h1{
+        font-size: 2em;
+    }
+    .WhyMeBlock-Body{
+        font-size: 1em;
+    }
+}
+
+@media(min-width: 2560px){
+    .WhyMeBlock{
+        width: 20vw;
+    }
+    .WhyMeBlock-Head img{
+        width: 5vw;
+    }
+    .WhyMeBlock-Head h1{
+        font-size: 4em;
+    }
+    .WhyMeBlock-Body{
+        font-size: 2em;
+    }
+}
+
+@media(min-width: 3840px){
+    .WhyMeBlock-Head h1{
+        font-size: 6em;
+    }
+    .WhyMeBlock-Body{
+        font-size: 3.5em;
+    }
+}
+
+@media(min-width: 7680px){
+    .WhyMeBlock-Head h1{
+        font-size: 12em;
+    }
+    .WhyMeBlock-Body{
+        font-size: 7em;
+    }
+}

@@ -1,25 +1,38 @@
 .ShowcaseProject{
     display: flex;
     flex-direction: row;
-    margin: 25px 0;
+    margin: 5vh 0;
     transform: translateX(-10px);
 }
 
+.ShowcaseProject-Img-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ShowcaseProject-Img-Container img{
-    width: 500px;
-    padding-right: 70px;
+    width: 25vw;
+    padding-right: 5vw;
 }
 
 .ShowcaseProject-Desc{
-    width: 500px;
+    width: 40.45vw;
 }
 
 .ShowcaseProject-Desc h1{
     color: #1b2735;
+    font-size: 2.5em;
 }
 
 .ShowcaseProject-Desc p{
     color: #2b3b4d;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.ShowcaseProject-Links div{
+    display: inline-block;
 }
 
 .ShowcaseProject-GitLink{
@@ -29,8 +42,8 @@
     border-bottom: 6px solid #01142b;
     color: #e0faff;
     background: #1b2735;
-    padding: 0.8em 3em;
-    margin-right: 15px;
+    padding: 2vh 3.5vw;
+    margin-right: 2vw;
 }
 
 .ShowcaseProject-GitLink:active{
@@ -45,10 +58,96 @@
     color: #152a42;
     background: #ffbb00;
     border-bottom: 5px solid #be8d03; 
-    padding: 0.8em 3em;
+    padding: 2vh 3.5vw;
 }
 
 .ShowcaseProject-LiveLink:active{
     border-bottom: 1px solid #ac7f04;
     transform: translateY(4px);
+}
+
+@media(max-width: 1200px){
+    .ShowcaseProject-Img-Container img{
+        width: 40vw;
+        padding-right: 5vw;
+    }
+    
+    .ShowcaseProject-GitLink,
+    .ShowcaseProject-LiveLink{
+        padding: 0.8vh 3.5vw;
+    }
+}
+
+@media(max-width: 800px){
+    .ShowcaseProject{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    .ShowcaseProject-Img-Container img{
+        width: 75vw;
+        padding-right: 0;
+        padding-bottom: 5vh;
+    }
+    .ShowcaseProject-Desc{
+        width: 75vw;
+    }
+}
+
+@media(max-width: 400px){
+    .ShowcaseProject-Desc h1{
+        font-size: 2em;
+    }
+    .ShowcaseProject-Desc p{
+        font-weight: 400;
+        font-size: 1em;
+    }
+    .ShowcaseProject-GitLink,
+    .ShowcaseProject-LiveLink{
+        font-size: 0.8em;
+        padding: 1.2vh 5vw;
+    }
+    .ShowcaseProject-GitLink{
+        margin-right: 4vw;
+    }
+
+}
+
+@media(min-width: 2560px){
+    .ShowcaseProject-Desc h1{
+        font-size: 4em;
+    }
+    .ShowcaseProject-Desc p{
+        font-size: 2em;
+    }
+    .ShowcaseProject-GitLink,
+    .ShowcaseProject-LiveLink{
+        font-size: 2em;
+    }
+}
+
+@media(min-width: 3840px){
+    .ShowcaseProject-Desc h1{
+        font-size: 6em;
+    }
+    .ShowcaseProject-Desc p{
+        font-size: 3em;
+    }
+    .ShowcaseProject-GitLink,
+    .ShowcaseProject-LiveLink{
+        font-size: 3em;
+    }
+}
+
+@media(min-width: 7680px){
+    .ShowcaseProject-Desc h1{
+        font-size: 10em;
+    }
+    .ShowcaseProject-Desc p{
+        font-size: 6em;
+    }
+    .ShowcaseProject-GitLink,
+    .ShowcaseProject-LiveLink{
+        font-size: 6em;
+    }
 }

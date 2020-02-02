@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     color: #394150;
-    padding: 50px 0;
+    padding: 0px 0 50px;
 }
 
 #ContactMe-Title{
@@ -39,7 +39,7 @@
 #ContactMe-Card-Top{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 5vw;
 }
 
 #ContactMe-Card-Top-Left{
@@ -107,4 +107,120 @@
 #ContactMe-Card-Bottom h4{
     margin-bottom: 7px;
     color: #778296;
+}
+
+@media(max-width: 1100px){
+    #ContactMe-Card-Top{
+        column-gap: 0vw;
+    }
+}
+
+@media(max-width: 800px){
+    #ContactMe-Card-Top{
+        grid-template-columns: 1fr;
+        row-gap: 3vh;
+    }
+
+    #ContactMe-SocialIcons-Grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 2vh;
+    }
+
+    #ContactMe-Title h1{
+        font-size: 3em;
+    }
+}
+
+@media(max-width: 500px){
+    #ContactMe-Card-Top-Left h1{
+        font-size: 2em;
+    }
+    
+    #ContactMe-Card-Top-Left h2{
+        font-size: 1.2em;  
+    }
+
+    #ContactMe-Card-Bottom h4{
+        font-size: 0.8em;
+    }
+
+    #ContactMe-SocialIcons-Grid img{
+        width: 25px;
+    }
+}
+
+@media(min-width: 2560px){
+    #ContactMe-Title h1{
+        font-size: 5.5em;
+    }
+
+    #ContactMe-Card-Top-Left h1{
+        font-size: 4em;
+    }
+    
+    #ContactMe-Card-Top-Left h2{
+        font-size: 2.5em;  
+    }
+
+    #ContactMe-Card-Top-Left h3{
+        font-size: 2em;
+    }
+
+    #ContactMe-Card-Bottom h4{
+        font-size: 1.5em;
+    }
+
+    #ContactMe-SocialIcons-Grid{
+        column-gap: 2vh;
+        row-gap: 2vh;
+    }
+
+    #ContactMe-SocialIcons-Grid img{
+        width: 3vw;
+    }
+}
+
+@media(min-width: 3840px){
+    #ContactMe-Title h1{
+        font-size: 9em;
+    }
+    
+    #ContactMe-Card-Top-Left h1{
+        font-size: 6em;
+    }
+    
+    #ContactMe-Card-Top-Left h2{
+        font-size: 3.5em;  
+    }
+
+    #ContactMe-Card-Top-Left h3{
+        font-size: 3em;
+    }
+
+    #ContactMe-Card-Bottom h4{
+        font-size: 2.5em;
+    }
+
+}
+
+@media(min-width: 7680px){
+    #ContactMe-Title h1{
+        font-size: 18em;
+    }
+    
+    #ContactMe-Card-Top-Left h1{
+        font-size: 12em;
+    }
+    
+    #ContactMe-Card-Top-Left h2{
+        font-size: 7em;  
+    }
+
+    #ContactMe-Card-Top-Left h3{
+        font-size: 6em;
+    }
+
+    #ContactMe-Card-Bottom h4{
+        font-size: 5em;
+    }
 }

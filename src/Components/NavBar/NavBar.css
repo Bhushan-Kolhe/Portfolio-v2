@@ -168,6 +168,29 @@ label:hover circle {
     }
 }
 
+@media(min-width: 2560px) {
+    #Logo {
+        width: 10vw;
+        padding-left: 0vh;
+         
+    }
+
+    #Menu ul li a {
+        font-size: 1.6em;
+    }
+}
+
+@media(min-width: 3840px) {
+    #Logo {
+        width: 15vw;
+        padding-left: 0;
+         
+    }
+    #Menu ul li a {
+        font-size: 2.5em;
+    }
+}
+
 @media(max-width: 600px) {
     .menu svg {
         width: 40px;

@@ -9,3 +9,38 @@
     box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA;
     transform: translateY(-50px);
 }
+
+@media(max-width: 1200px){
+    #DevelopmentSkillCard{
+        width: 200px;
+    }
+}
+
+@media(max-width: 800px){
+    #DevelopmentSkillCard{
+        width: 310px;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 400px){
+    #DevelopmentSkillCard{
+        width: 230px;
+    }
+}
+
+@media(min-width: 2560px){
+    #DevelopmentSkillCard{
+        width: 20vw;
+        padding: 4vh 4vh 4vh;
+        border-radius: 1.5vh;
+    }
+}
+
+@media(min-width: 3840px){
+
+}
+
+@media(min-width: 7680px){
+
+}
