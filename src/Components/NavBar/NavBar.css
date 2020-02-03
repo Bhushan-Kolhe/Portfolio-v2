@@ -16,6 +16,9 @@
 .Nav-Dark {
     background: #011627;
     animation: menu-anime 1s ease forwards;
+    -moz-animation: menu-anime 1s ease forwards;
+    -webkit-animation: menu-anime 1s ease forwards;
+    -o-animation: menu-anime 1s ease forwards;
 }
 
 .Container {
@@ -35,6 +38,9 @@
     flex-direction: row;
     text-align: center;
     transform: translateY(-30%);
+    -moz-transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+    -o-transform: translateY(-30%);
 }
 
 #Menu ul li {
@@ -80,6 +86,9 @@ input {
     stroke-dasharray: var(--length) var(--total-length);
     stroke-dashoffset: var(--offset);
     transition: all .8s cubic-bezier(.645, .045, .355, 1);
+    -moz-transition: all .8s cubic-bezier(.645, .045, .355, 1);
+    -webkit-transition: all .8s cubic-bezier(.645, .045, .355, 1);
+    -o-transition: all .8s cubic-bezier(.645, .045, .355, 1);
 }
 
 circle {
@@ -117,6 +126,9 @@ label:hover circle {
 
 .menu--2 input:checked+svg path {
     transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -o-transform: translateX(30px);
 }
 
 .menu--2 input:checked+svg .line--1,
@@ -159,6 +171,9 @@ label:hover circle {
         flex-direction: column;
         display: none;
         transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -o-transform: translateY(0%);
     }
     #Menu ul li {
         padding: 5px;
@@ -210,38 +225,122 @@ label:hover circle {
         opacity: 100%;
     }
 }
+
+@-moz-keyframes menu-anime {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes menu-anime {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@-o-keyframes menu-anime {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
 /* Scroll CSS */
 .Nav-Bar-ScrollDown{
     animation: navbar-scrolldown-anime 0.6s ease forwards;
+    -moz-animation: navbar-scrolldown-anime 0.6s ease forwards;
+    -webkit-animation: navbar-scrolldown-anime 0.6s ease forwards;
+    -o-animation: navbar-scrolldown-anime 0.6s ease forwards;
 }
 
 .Nav-Bar-ScrollUp{
     animation: navbar-scrollup-anime 0.6s ease forwards;
+    -moz-animation: navbar-scrollup-anime 0.6s ease forwards;
+    -webkit-animation: navbar-scrollup-anime 0.6s ease forwards;
+    -o-animation: navbar-scrollup-anime 0.6s ease forwards;
 }
 
 #Menu ul li a.a-OnScrollDown{
     animation: atags-scrolldown-anime 0.6s ease forwards;
+    -moz-animation: atags-scrolldown-anime 0.6s ease forwards;
+    -webkit-animation: atags-scrolldown-anime 0.6s ease forwards;
+    -o-animation: atags-scrolldown-anime 0.6s ease forwards;
 }
 
 #Menu ul li a.a-OnScrollup{
     animation: atags-scrollup-anime 0.6s ease forwards;
+    -moz-animation: atags-scrollup-anime 0.6s ease forwards;
+    -webkit-animation: atags-scrollup-anime 0.6s ease forwards;
+    -o-animation: atags-scrollup-anime 0.6s ease forwards;
 }
 #Logo.logo-OnScrollDown{
     animation: logo-scrolldown-anime 0.6s ease forwards;
+    -moz-animation: logo-scrolldown-anime 0.6s ease forwards;
+    -webkit-animation: logo-scrolldown-anime 0.6s ease forwards;
+    -o-animation: logo-scrolldown-anime 0.6s ease forwards;
 }
 #Logo.logo-OnScrollUp{
     animation: logo-scrollup-anime 0.6s ease forwards;
+    -moz-animation: logo-scrollup-anime 0.6s ease forwards;
+    -webkit-animation: logo-scrollup-anime 0.6s ease forwards;
+    -o-animation: logo-scrollup-anime 0.6s ease forwards;
 }
 
 #Menu ul.ul-OnScrollDown{
     animation: ul-scrolldown-anime 0.6s ease forwards;
+    -moz-animation: ul-scrolldown-anime 0.6s ease forwards;
+    -webkit-animation: ul-scrolldown-anime 0.6s ease forwards;
+    -o-animation: ul-scrolldown-anime 0.6s ease forwards;
 }
 
 #Menu ul.ul-OnScrollUp{
     animation: ul-scrollup-anime 0.6s ease forwards;
+    -moz-animation: ul-scrollup-anime 0.6s ease forwards;
+    -webkit-animation: ul-scrollup-anime 0.6s ease forwards;
+    -o-animation: ul-scrollup-anime 0.6s ease forwards;
 }
 
 @keyframes navbar-scrolldown-anime{
+    from{
+        padding: 2vh 10%;
+        background: transparent;
+    }
+    to{
+        padding: 0vh 10%;
+        background: #011627;
+    }
+}
+
+@-moz-keyframes navbar-scrolldown-anime{
+    from{
+        padding: 2vh 10%;
+        background: transparent;
+    }
+    to{
+        padding: 0vh 10%;
+        background: #011627;
+    }
+}
+
+@-webkit-keyframes navbar-scrolldown-anime{
+    from{
+        padding: 2vh 10%;
+        background: transparent;
+    }
+    to{
+        padding: 0vh 10%;
+        background: #011627;
+    }
+}
+
+@-o-keyframes navbar-scrolldown-anime{
     from{
         padding: 2vh 10%;
         background: transparent;
@@ -261,6 +360,33 @@ label:hover circle {
     }
 }
 
+@-moz-keyframes atags-scrolldown-anime{
+    from{
+        color: #1b2735;
+    }
+    to{
+        color: #f8fffd;
+    }
+}
+
+@-webkit-keyframes atags-scrolldown-anime{
+    from{
+        color: #1b2735;
+    }
+    to{
+        color: #f8fffd;
+    }
+}
+
+@-o-keyframes atags-scrolldown-anime{
+    from{
+        color: #1b2735;
+    }
+    to{
+        color: #f8fffd;
+    }
+}
+
 @keyframes logo-scrolldown-anime{
     from{
         transform: translateY(0%);
@@ -271,6 +397,46 @@ label:hover circle {
         width: 7vw;
     }
 }
+
+@-moz-keyframes logo-scrolldown-anime{
+    from{
+        transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        width: 12vw;
+    }
+    to{
+        transform: translateY(15%);
+        -moz-transform: translateY(15%);
+        width: 7vw;
+    }
+}
+
+@-webkit-keyframes logo-scrolldown-anime{
+    from{
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        width: 12vw;
+    }
+    to{
+        transform: translateY(15%);
+        -webkit-transform: translateY(15%);
+        width: 7vw;
+    }
+}
+
+@-o-keyframes logo-scrolldown-anime{
+    from{
+        transform: translateY(0%);
+        -o-transform: translateY(0%);
+        width: 12vw;
+    }
+    to{
+        transform: translateY(15%);
+        -o-transform: translateY(15%);
+        width: 7vw;
+    }
+}
+
 @keyframes ul-scrolldown-anime{
     from{
         transform: translateY(-30%);
@@ -280,7 +446,73 @@ label:hover circle {
     }
 }
 
+@-moz-keyframes ul-scrolldown-anime{
+    from{
+        transform: translateY(-30%);
+        -moz-transform: translateY(-30%);
+    }
+    to{
+        transform: translateY(10%);
+        -moz-transform: translateY(10%);
+    }
+}
+
+@-webkit-keyframes ul-scrolldown-anime{
+    from{
+        transform: translateY(-30%);
+        -webkit-transform: translateY(-30%);
+    }
+    to{
+        transform: translateY(10%);
+        -webkit-transform: translateY(10%);
+    }
+}
+
+@-o-keyframes ul-scrolldown-anime{
+    from{
+        transform: translateY(-30%);
+        -o-transform: translateY(-30%);
+    }
+    to{
+        transform: translateY(10%);
+        -o-transform: translateY(10%);
+    }
+}
+
 @keyframes navbar-scrollup-anime{
+    from{
+        padding: 0vh 10%;
+        background: #011627;
+    }
+    to{
+        padding: 2vh 10%;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes navbar-scrollup-anime{
+    from{
+        padding: 0vh 10%;
+        background: #011627;
+    }
+    to{
+        padding: 2vh 10%;
+        background: transparent;
+    }
+}
+
+@-webkit-keyframes navbar-scrollup-anime{
+    from{
+        padding: 0vh 10%;
+        background: #011627;
+    }
+    to{
+        padding: 2vh 10%;
+        background: transparent;
+    }
+}
+
+@-o-keyframes navbar-scrollup-anime{
     from{
         padding: 0vh 10%;
         background: #011627;
@@ -300,7 +532,67 @@ label:hover circle {
     }
 }
 
+@-moz-keyframes atags-scrollup-anime{
+    from{
+        color: #f8fffd;
+    }
+    to{
+        color: #1b2735;
+    }
+}
+
+@-webkit-keyframes atags-scrollup-anime{
+    from{
+        color: #f8fffd;
+    }
+    to{
+        color: #1b2735;
+    }
+}
+
+@-o-keyframes atags-scrollup-anime{
+    from{
+        color: #f8fffd;
+    }
+    to{
+        color: #1b2735;
+    }
+}
+
 @keyframes logo-scrollup-anime{
+    from{
+        margin-top: 5px;
+        width: 7vw;
+    }
+    to{ 
+        margin-top: 0px;
+        width: 12vw;
+    }
+}
+
+@-moz-keyframes logo-scrollup-anime{
+    from{
+        margin-top: 5px;
+        width: 7vw;
+    }
+    to{ 
+        margin-top: 0px;
+        width: 12vw;
+    }
+}
+
+@-webkit-keyframes logo-scrollup-anime{
+    from{
+        margin-top: 5px;
+        width: 7vw;
+    }
+    to{ 
+        margin-top: 0px;
+        width: 12vw;
+    }
+}
+
+@-o-keyframes logo-scrollup-anime{
     from{
         margin-top: 5px;
         width: 7vw;
@@ -317,5 +609,38 @@ label:hover circle {
     }
     to{
         transform: translateY(-30%);
+    }
+}
+
+@-moz-keyframes ul-scrollup-anime{
+    from{
+        transform: translateY(10%);
+        -moz-transform: translateY(10%);
+    }
+    to{
+        transform: translateY(-30%);
+        -moz-transform: translateY(-30%);
+    }
+}
+
+@-webkit-keyframes ul-scrollup-anime{
+    from{
+        transform: translateY(10%);
+        -webkit-transform: translateY(10%);
+    }
+    to{
+        transform: translateY(-30%);
+        -webkit-transform: translateY(-30%);
+    }
+}
+
+@-o-keyframes ul-scrollup-anime{
+    from{
+        transform: translateY(10%);
+        -o-transform: translateY(10%);
+    }
+    to{
+        transform: translateY(-30%);
+        -o-transform: translateY(-30%);
     }
 }

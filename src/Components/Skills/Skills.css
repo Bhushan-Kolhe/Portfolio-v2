@@ -2,6 +2,9 @@
     width: 100vw;
     min-height: 100vh;
     background: linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
+    background: -moz-linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
+    background: -webkit-linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
+    background: -o-linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +30,9 @@
 #Skills-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5vw;
+    column-gap: 5vw;
+    -moz-column-gap: 5vw;
+    -webkit-column-gap: 5vw;
     align-items: start;
 }
 
@@ -44,6 +49,9 @@
     width: 35px;
     padding-right: 15px;
     transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -o-transform: translateY(20%);
 }
 
 .SkillCard-Section{
@@ -62,6 +70,8 @@
 @media(max-width: 1200px){
     #Skills-grid{
         column-gap: 2vw;
+        -moz-column-gap: 2vw;
+        -webkit-column-gap: 2vw;
     }
     .SkillCard-Title h1{
         font-size: 1.4em;
@@ -111,6 +121,8 @@
     }
     #Skills-grid{
         column-gap: 4vw;
+        -moz-column-gap: 4vw;
+        -webkit-column-gap: 4vw;
     }
     .SkillCard-Title h1{
         font-size: 3em;

@@ -3,6 +3,9 @@
     flex-direction: row;
     margin: 5vh 0;
     transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
 }
 
 .ShowcaseProject-Img-Container{
@@ -49,6 +52,9 @@
 .ShowcaseProject-GitLink:active{
     border-bottom: 2px solid #022d5e;
     transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    -o-transform: translateY(4px);
 }
 
 .ShowcaseProject-LiveLink{
@@ -64,6 +70,9 @@
 .ShowcaseProject-LiveLink:active{
     border-bottom: 1px solid #ac7f04;
     transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    -o-transform: translateY(4px);
 }
 
 @media(max-width: 1200px){

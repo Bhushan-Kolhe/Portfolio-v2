@@ -10,11 +10,17 @@
     background-color:#f0f4fa;
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
     animation: ProjectCard-hover-out-anime 0.5s ease forwards;
+    -moz-animation: ProjectCard-hover-out-anime 0.5s ease forwards;
+    -webkit-animation: ProjectCard-hover-out-anime 0.5s ease forwards;
+    -o-animation: ProjectCard-hover-out-anime 0.5s ease forwards;
     cursor: pointer;
 }
 
 .ProjectCard:hover{
     animation: ProjectCard-hover-anime 0.5s ease forwards;
+    -moz-animation: ProjectCard-hover-anime 0.5s ease forwards;
+    -webkit-animation: ProjectCard-hover-anime 0.5s ease forwards;
+    -o-animation: ProjectCard-hover-anime 0.5s ease forwards;
 }
 
 .ProjectCard-Header{
@@ -28,6 +34,9 @@
 .ProjectCard-Header img{
     width: 75px;
     transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
 }
 
 .ProjectCard-Header h1{
@@ -38,11 +47,20 @@
     width: 25px;
     padding: 0 5px;
     transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -o-transform: translateY(50%);
     animation: Link-hover-out-anime 0.5s ease forwards;
+    -moz-animation: Link-hover-out-anime 0.5s ease forwards;
+    -webkit-animation: Link-hover-out-anime 0.5s ease forwards;
+    -o-animation: Link-hover-out-anime 0.5s ease forwards;
 }
 
 .ProjectCard-Links img:hover{
     animation: Link-hover-anime 0.5s ease forwards;
+    -moz-animation: Link-hover-anime 0.5s ease forwards;
+    -webkit-animation: Link-hover-anime 0.5s ease forwards;
+    -o-animation: Link-hover-anime 0.5s ease forwards;
 }
 
 .ProjectCard-Footer{
@@ -56,31 +74,164 @@
 @keyframes Link-hover-anime{
     to{
         transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+}
+
+@-moz-keyframes Link-hover-anime{
+    to{
+        transform: scale(1.5);
+        -moz-transform: scale(1.5);
+    }
+}
+
+@-webkit-keyframes Link-hover-anime{
+    to{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+    }
+}
+
+@-o-keyframes Link-hover-anime{
+    to{
+        transform: scale(1.5);
+        -o-transform: scale(1.5);
     }
 }
 
 @keyframes Link-hover-out-anime{
     from{
         transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -o-transform: scale(1.5);
     }
     to{
         transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+@-moz-keyframes Link-hover-out-anime{
+    from{
+        transform: scale(1.5);
+        -moz-transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes Link-hover-out-anime{
+    from{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@-o-keyframes Link-hover-out-anime{
+    from{
+        transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+        -o-transform: scale(1);
     }
 }
 
 @keyframes ProjectCard-hover-anime{
     to{
         transform: translateY(-10px) scale(1.05);
+        -moz-transform: translateY(-10px) scale(1.05);
+        -webkit-transform: translateY(-10px) scale(1.05);
+        -o-transform: translateY(-10px) scale(1.05);
         box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
     }
 }
+
+@-moz-keyframes ProjectCard-hover-anime{
+    to{
+        transform: translateY(-10px) scale(1.05);
+        -moz-transform: translateY(-10px) scale(1.05);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+}
+
+@-webkit-keyframes ProjectCard-hover-anime{
+    to{
+        transform: translateY(-10px) scale(1.05);
+        -webkit-transform: translateY(-10px) scale(1.05);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+}
+
+@-o-keyframes ProjectCard-hover-anime{
+    to{
+        transform: translateY(-10px) scale(1.05);
+        -o-transform: translateY(-10px) scale(1.05);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+}
+
 @keyframes ProjectCard-hover-out-anime{
     from{
         transform: translateY(-10px) scale(1.05);
+        -moz-transform: translateY(-10px) scale(1.05);
+        -webkit-transform: translateY(-10px) scale(1.05);
+        -o-transform: translateY(-10px) scale(1.05);
         box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
     }
     to{
         transform: translateY(0px) scale(1);
+        -moz-transform: translateY(0px) scale(1);
+        -webkit-transform: translateY(0px) scale(1);
+        -o-transform: translateY(0px) scale(1);
+    }
+}
+
+@-moz-keyframes ProjectCard-hover-out-anime{
+    from{
+        transform: translateY(-10px) scale(1.05);
+        -moz-transform: translateY(-10px) scale(1.05);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+    to{
+        transform: translateY(0px) scale(1);
+        -moz-transform: translateY(0px) scale(1);
+    }
+}
+
+@-webkit-keyframes ProjectCard-hover-out-anime{
+    from{
+        transform: translateY(-10px) scale(1.05);
+        -webkit-transform: translateY(-10px) scale(1.05);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+    to{
+        transform: translateY(0px) scale(1);
+        -webkit-transform: translateY(0px) scale(1);
+    }
+}
+
+@-o-keyframes ProjectCard-hover-out-anime{
+    from{
+        transform: translateY(-10px) scale(1.05);
+        -o-transform: translateY(-10px) scale(1.05);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+    to{
+        transform: translateY(0px) scale(1);
+        -o-transform: translateY(0px) scale(1);
     }
 }
 

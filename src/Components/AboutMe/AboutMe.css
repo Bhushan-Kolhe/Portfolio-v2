@@ -61,7 +61,10 @@
     color: #97a0a7;
 }
 #AboutMe-Quote.Quote-Animation{
-    animation: quote-anime 10s ease infinite
+    animation: quote-anime 10s ease infinite;
+    -moz-animation: quote-anime 10s ease infinite;
+    -webkit-animation: quote-anime 10s ease infinite;
+    -o-animation: quote-anime 10s ease infinite;
 }
 @keyframes quote-anime{ 
     0%{
@@ -79,6 +82,75 @@
     100%{
         opacity: 0%;
         transform: translate(0%, -50%);
+    }
+}
+
+@-moz-keyframes quote-anime{ 
+    0%{
+        opacity: 0%;
+        transform: translate(0%, 50%);
+        -moz-transform: translate(0%, 50%);
+    }
+    5%{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+    }
+    95%{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+    }
+    100%{
+        opacity: 0%;
+        transform: translate(0%, -50%);
+        -moz-transform: translate(0%, -50%);
+    }
+}
+
+@-webkit-keyframes quote-anime{ 
+    0%{
+        opacity: 0%;
+        transform: translate(0%, 50%);
+        -webkit-transform: translate(0%, 50%);
+    }
+    5%{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
+    }
+    95%{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
+    }
+    100%{
+        opacity: 0%;
+        transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+    }
+}
+
+@-o-keyframes quote-anime{ 
+    0%{
+        opacity: 0%;
+        transform: translate(0%, 50%);
+        -o-transform: translate(0%, 50%);
+    }
+    5%{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+    }
+    95%{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+    }
+    100%{
+        opacity: 0%;
+        transform: translate(0%, -50%);
+        -o-transform: translate(0%, -50%);
     }
 }
 

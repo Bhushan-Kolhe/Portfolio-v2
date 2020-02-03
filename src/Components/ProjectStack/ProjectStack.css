@@ -2,6 +2,9 @@
     width: 100vw;
     min-height: 100vh;
     background: linear-gradient(#f8fffd , #E0E5EC);
+    background: -moz-linear-gradient(#f8fffd , #E0E5EC);
+    background: -webkit-linear-gradient(#f8fffd , #E0E5EC);
+    background: -o-linear-gradient(#f8fffd , #E0E5EC);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,8 +14,12 @@
 #ProjectStack{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vw;
+    column-gap: 3vw;
+    row-gap: 3vw;
+    -moz-column-gap: 3vw;
+    -webkit-column-gap: 3vw;
+    -moz-row-gap: 3vw;
+    -webkit-row-gap: 3vw;
     padding: 5vh 0;
 }
 

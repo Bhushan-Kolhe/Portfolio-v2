@@ -1,8 +1,30 @@
 #Loader{
     animation: loader-fill-anime 1s ease forwards 5s;
+    -moz-animation: loader-fill-anime 1s ease forwards 5s;
+    -webkit-animation: loader-fill-anime 1s ease forwards 5s;
+    -o-animation: loader-fill-anime 1s ease forwards 5s;
     z-index: 999;
 }
+
 @keyframes loader-fill-anime{
+    to{
+        opacity: 0%;
+    }
+}
+
+@-moz-keyframes loader-fill-anime{
+    to{
+        opacity: 0%;
+    }
+}
+
+@-webkit-keyframes loader-fill-anime{
+    to{
+        opacity: 0%;
+    }
+}
+
+@-o-keyframes loader-fill-anime{
     to{
         opacity: 0%;
     }

@@ -4,12 +4,18 @@
     left: 50%;
     z-index: 1000;
     transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
 }
 .signature svg {
     width: 500px;
     height: 300px;
     fill:transparent;
     animation: fill-anime 2s ease forwards 3.5s;
+    -moz-animation: fill-anime 2s ease forwards 3.5s;
+    -webkit-animation: fill-anime 2s ease forwards 3.5s;
+    -o-animation: fill-anime 2s ease forwards 3.5s;
 }
 .signature svg g g path{
     stroke: #fcba03;
@@ -18,67 +24,123 @@
     stroke-dasharray: 957.78px;
     stroke-dashoffset: 957.78px;
     animation: line-anime 2s ease forwards;
+    -moz-animation: line-anime 2s ease forwards;
+    -webkit-animation: line-anime 2s ease forwards;
+    -o-animation: line-anime 2s ease forwards;
 }
 .signature svg path:nth-child(2){
     stroke-dasharray: 451.87px;
     stroke-dashoffset: 451.87px;
     animation: line-anime 2s ease forwards 0.3s;
+    -moz-animation: line-anime 2s ease forwards 0.3s;
+    -webkit-animation: line-anime 2s ease forwards 0.3s;
+    -o-animation: line-anime 2s ease forwards 0.3s;
 }
 .signature svg path:nth-child(3){
     stroke-dasharray: 168.44px;
     stroke-dashoffset: 168.44px;
     animation: line-anime 2s ease forwards 0.6s;
+    -moz-animation: line-anime 2s ease forwards 0.6s;
+    -webkit-animation: line-anime 2s ease forwards 0.6s;
+    -o-animation: line-anime 2s ease forwards 0.6s;
 }
 .signature svg path:nth-child(4){
     stroke-dasharray: 235.75px;
     stroke-dashoffset: 235.75px;
     animation: line-anime 2s ease forwards 0.9s;
+    -moz-animation: line-anime 2s ease forwards 0.9s;
+    -webkit-animation: line-anime 2s ease forwards 0.9s;
+    -o-animation: line-anime 2s ease forwards 0.9s;
 }
 .signature svg path:nth-child(5){
     stroke-dasharray: 451.88px;
     stroke-dashoffset: 451.88px;
     animation: line-anime 2s ease forwards 1.2s;
+    -moz-animation: line-anime 2s ease forwards 1.2s;
+    -webkit-animation: line-anime 2s ease forwards 1.2s;
+    -o-animation: line-anime 2s ease forwards 1.2s;
 }
 .signature svg path:nth-child(6){
     stroke-dasharray: 167.83px;
     stroke-dashoffset: 167.83px;
     animation: line-anime 2s ease forwards 1.5s;
+    -moz-animation: line-anime 2s ease forwards 1.5s;
+    -webkit-animation: line-anime 2s ease forwards 1.5s;
+    -o-animation: line-anime 2s ease forwards 1.5s;
 }
 .signature svg path:nth-child(7){
     stroke-dasharray: 142px;
     stroke-dashoffset: 142px;
     animation: line-anime 2s ease forwards 1.8s;
+    -moz-animation: line-anime 2s ease forwards 1.8s;
+    -webkit-animation: line-anime 2s ease forwards 1.8s;
+    -o-animation: line-anime 2s ease forwards 1.8s;
 }
 .signature svg path:nth-child(8){
     stroke-dasharray: 1316px;
     stroke-dashoffset: 1316px;
     animation: line-anime 2s ease forwards 2.1s;
+    -moz-animation: line-anime 2s ease forwards 2.1s;
+    -webkit-animation: line-anime 2s ease forwards 2.1s;
+    -o-animation: line-anime 2s ease forwards 2.1s;
 }
 .signature svg path:nth-child(9){
     stroke-dasharray: 144.9px;
     stroke-dashoffset: 144.9px;
     animation: line-anime 2s ease forwards 2.4s;
+    -moz-animation: line-anime 2s ease forwards 2.4s;
+    -webkit-animation: line-anime 2s ease forwards 2.4s;
+    -o-animation: line-anime 2s ease forwards 2.4s;
 }
 .signature svg path:nth-child(10){
     stroke-dasharray: 437.62px;
     stroke-dashoffset: 437.62px;
     animation: line-anime 2s ease forwards 2.7s;
+    -moz-animation: line-anime 2s ease forwards 2.7s;
+    -webkit-animation: line-anime 2s ease forwards 2.7s;
+    -o-animation: line-anime 2s ease forwards 2.7s;
 }
 .signature svg path:nth-child(11){
     stroke-dasharray: 451.88px;
     stroke-dashoffset: 451.88px;
     animation: line-anime 2s ease forwards 3s;
+    -moz-animation: line-anime 2s ease forwards 3s;
+    -webkit-animation: line-anime 2s ease forwards 3s;
+    -o-animation: line-anime 2s ease forwards 3s;
 }
 .signature svg path:nth-child(12){
     stroke-dasharray: 140.07px;
     stroke-dashoffset: 140.07px;
     animation: line-anime 2s ease forwards 3.3s;
+    -moz-animation: line-anime 2s ease forwards 3.3s;
+    -webkit-animation: line-anime 2s ease forwards 3.3s;
+    -o-animation: line-anime 2s ease forwards 3.3s;
 }
+
 @keyframes line-anime{
     to{
         stroke-dashoffset: 0;
     }
 }
+
+@-moz-keyframes line-anime{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes line-anime{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@-o-keyframes line-anime{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
 @keyframes fill-anime{
     from{
         fill: tranparent;
@@ -87,6 +149,34 @@
         fill: #fcba03;
     }
 }
+
+@-moz-keyframes fill-anime{
+    from{
+        fill: tranparent;
+    }
+    to{
+        fill: #fcba03;
+    }
+}
+
+@-webkit-keyframes fill-anime{
+    from{
+        fill: tranparent;
+    }
+    to{
+        fill: #fcba03;
+    }
+}
+
+@-o-keyframes fill-anime{
+    from{
+        fill: tranparent;
+    }
+    to{
+        fill: #fcba03;
+    }
+}
+
 @media (max-width: 600px){
     svg {
         width: 400px;

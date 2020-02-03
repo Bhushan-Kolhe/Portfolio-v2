@@ -40,6 +40,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5vw;
+    -moz-column-gap: 5vw;
+    -webkit-column-gap: 5vw;
+    -o-column-gap: 5vw;
 }
 
 #ContactMe-Card-Top-Left{
@@ -76,6 +79,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    -moz-row-gap: 20px;
+    -webkit-row-gap: 20px;
 }
 
 #ContactMe-SocialIcons-Grid a{
@@ -112,6 +119,8 @@
 @media(max-width: 1100px){
     #ContactMe-Card-Top{
         column-gap: 0vw;
+        -moz-column-gap: 0vw;
+        -webkit-column-gap: 0vw;
     }
 }
 
@@ -119,6 +128,8 @@
     #ContactMe-Card-Top{
         grid-template-columns: 1fr;
         row-gap: 3vh;
+        -moz-row-gap: 3vh;
+        -webkit-row-gap: 3vh;
     }
 
     #ContactMe-SocialIcons-Grid{
@@ -173,6 +184,10 @@
     #ContactMe-SocialIcons-Grid{
         column-gap: 2vh;
         row-gap: 2vh;
+        -moz-column-gap: 2vh;
+        -webkit-column-gap: 2vh;
+        -moz-row-gap: 2vh;
+        -webkit-row-gap: 2vh;
     }
 
     #ContactMe-SocialIcons-Grid img{
