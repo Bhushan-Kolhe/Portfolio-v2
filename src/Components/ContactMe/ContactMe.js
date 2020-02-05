@@ -44,7 +44,7 @@ function ContactMe() {
                 <div id="ContactMe-Card-Bottom">
                     <Fade delay={1200} cascade>
                         <h4>
-                            Designed and Developed by &copy;Bhushan Kolhe
+                            Designed and Built by &copy;Bhushan Kolhe
                         </h4>
                     </Fade>
                 </div>

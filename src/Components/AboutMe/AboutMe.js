@@ -21,7 +21,7 @@ function AboutMe() {
             <Fade onReveal={OnReveal} bottom cascade distance={"60%"}>
                 <div id="AboutMe-Container">
                     <div id="AboutMe-Left">
-                        <img src="./img/1.png" alt="My Illustration" />
+                        <img src="./img/avatar.svg" alt="My Illustration" />
                     </div>
                     <div id="AboutMe-Right">
                         <div id="AboutMe-Title">
