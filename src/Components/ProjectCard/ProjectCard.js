@@ -7,7 +7,7 @@ function ProjectCard(props) {
     const Project = props.Project;
     const Delay = props.delay;
     return (
-        <Fade bottom delay={Delay*150} distance={"40%"}>
+        <Fade bottom delay={(Delay % 3 + 1) * 150} distance={"40%"}>
             <div>
                 <div className="ProjectCard">
                     <div className="ProjectCard-Top">
