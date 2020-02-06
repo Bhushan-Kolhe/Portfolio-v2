@@ -1,6 +1,6 @@
 .ProjectCard{
     width: 280px;
-    height: 350px;
+    height: 400px;
     background-color: #111;
     display: flex;
     flex-direction: column;
@@ -238,14 +238,14 @@
 @media(max-width: 350px){
     .ProjectCard{
         width: 250px;
-        height: 350px;
+        min-height: 350px;
     }
 }
 
 @media(min-width: 2560px){
     .ProjectCard{
         width: 35vh;
-        height: 45vh;
+        height: 47vh;
         padding: 4vh;
     }
     .ProjectCard-Header img{

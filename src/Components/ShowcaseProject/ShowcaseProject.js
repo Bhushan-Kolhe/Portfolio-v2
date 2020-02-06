@@ -29,18 +29,26 @@ function ShowcaseProject(props) {
                     <div className="ShowcaseProject-Desc">
                         <h1>{Project.Title}</h1>
                         <p>{Project.Desc}</p>
-                            <div className="ShowcaseProject-Links">
-                                <Fade bottom delay={200} >
-                                <div>
-                                <a className="ShowcaseProject-GitLink" href={Project.GitLink}> Github </a>
-                                </div>
-                                </Fade>
-                                <Fade bottom  delay={350} >
-                                <div>
-                                <a className="ShowcaseProject-LiveLink" href={Project.Link}> Live Version </a>
-                                </div>
-                                </Fade>
-                            </div>
+                        <div className="ShowcaseProject-Stack">
+                            {Project.Stack.map(Element => (<span> {Element} </span>))}
+                        </div>
+                        <div className="ShowcaseProject-Links">
+                            {
+                                Project.HasGit ? ( <Fade bottom delay={200} >
+                                        <div>
+                                            <a className="ShowcaseProject-GitLink" target="_blank" href={Project.GitLink}> Github </a>
+                                        </div>
+                                    </Fade> ) : ""}
+                            {
+                                Project.HasLink ? (
+                                    <Fade bottom  delay={350} >
+                                        <div>
+                                            <a className="ShowcaseProject-LiveLink" target="_blank" href={Project.Link}> Live Version </a>
+                                        </div>
+                                    </Fade>
+                                ) : ""
+                            }
+                        </div>
                     </div>
                 </Fade>
             </div>

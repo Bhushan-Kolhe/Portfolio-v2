@@ -243,7 +243,7 @@ function NavBar() {
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Skills</a></li>
                         <li><a href="#">Contact Me</a></li>
-                        <li id="Resume"><a href="#">Resume</a></li>
+                        <li id="Resume"><a target="_blank" href="./Documents/Resume.pdf">Resume</a></li>
                     </ul>
                 </Fade>
                 <div className="menu cross menu--2">

@@ -29,7 +29,7 @@ function ContactMe() {
                                     Socials.map( Element => {
                                         const icon = `./img/${Element.icon}`
                                         return (
-                                            <a key={uuid.v4()} href={Element.link}>
+                                            <a key={uuid.v4()} target="_blank" href={Element.link}>
                                                 <img src={icon} alt="Social Icon"></img>
                                             </a>
                                         )

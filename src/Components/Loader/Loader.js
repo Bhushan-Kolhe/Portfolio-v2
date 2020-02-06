@@ -5,11 +5,6 @@ import './Loader.css';
 
 function Loader() {
 
-    setTimeout(() => {
-        const LoaderElement = document.getElementById('Loader');
-        LoaderElement.innerHTML = "";
-    },6000)
-
     return (
         <div id="Loader">
             <Signature />

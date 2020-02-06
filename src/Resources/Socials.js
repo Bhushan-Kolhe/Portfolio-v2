@@ -1,22 +1,22 @@
 const Socials = [
     {
         name: "Facebook",
-        link: "#",
+        link: "https://www.facebook.com/kkbk58901",
         icon: "facebook.svg"
     },
     {
         name: "Linkedin",
-        link: "#",
+        link: "https://www.linkedin.com/in/bhushan-kolhe/",
         icon: "linkedin.svg"
     },
     {
         name: "Instagram",
-        link: "#",
+        link: "https://www.instagram.com/bhushan.k_/",
         icon: "instagram.svg"
     },
     {
         name: "Github",
-        link: "#",
+        link: "https://github.com/chocoholic-me",
         icon: "github.svg"
     }
 ]

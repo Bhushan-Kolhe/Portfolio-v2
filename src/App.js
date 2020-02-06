@@ -6,15 +6,15 @@ import './App.css';
 
 function App() {
   const [ Loaded, setLoaded ] = useState(false);
-  /*
   setTimeout( () => {
     setLoaded(true)
   },
   5100 )
-  */
   return (
     <div className="App">
-      <HomePage />
+      {
+        Loaded ? <HomePage /> : <Loader />
+      }
     </div>
   );
 }

@@ -32,6 +32,7 @@
     color: #2b3b4d;
     font-size: 1.1em;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .ShowcaseProject-Links div{
@@ -47,6 +48,17 @@
     background: #1b2735;
     padding: 2vh 3.5vw;
     margin-right: 2vw;
+}
+
+.ShowcaseProject-Stack{
+    color: #636669;
+    font-weight: 700;
+    padding: 1vh 0 3vh;
+    font-size: 0.8em;
+}
+
+.ShowcaseProject-Stack span{
+    margin-right: 1vh;
 }
 
 .ShowcaseProject-GitLink:active{
@@ -133,6 +145,9 @@
     .ShowcaseProject-LiveLink{
         font-size: 2em;
     }
+    .ShowcaseProject-Stack{
+        font-size: 1.5em;
+    }
 }
 
 @media(min-width: 3840px){
@@ -146,6 +161,10 @@
     .ShowcaseProject-LiveLink{
         font-size: 3em;
     }
+
+    .ShowcaseProject-Stack{
+        font-size: 2.5em;
+    }
 }
 
 @media(min-width: 7680px){
@@ -158,5 +177,9 @@
     .ShowcaseProject-GitLink,
     .ShowcaseProject-LiveLink{
         font-size: 6em;
+    }
+
+    .ShowcaseProject-Stack{
+        font-size: 4em;
     }
 }

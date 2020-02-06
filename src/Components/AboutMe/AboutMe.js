@@ -29,12 +29,16 @@ function AboutMe() {
                         </div>
                         <div id="AboutMe-Body">
                             <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type 
-                            specimen book. It has survived not only five centuries, but also the leap into 
-                            electronic typesetting, remaining essentially unchanged. It was popularised in 
-                            the 1960s with the release of Letraset sheets
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hey!, my name Bhushan Kolhe and I am a Computer Engineer. 
+                                I am fresh out of my university and currently searching for a hook in life. I am contagiously 
+                                optimistic and love to be as high on life as a puppy. I am also a philosopher who loves to ponder 
+                                upon the simplicity of our complex universe and a fiction nerd fantasizing about 
+                                transcending reality. 
+                                <br/>
+                                <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like the sun which is always ready to rise in the morning, I am 
+                                always ready to learn new skills and pick up a new project so if you have an idea or if you 
+                                just want to have a chat, Be quick as a flash and Hit me up! :)   
                             </p>
                         </div>
                         <div id="AboutMe-Quote" className="Quote-Animation">
