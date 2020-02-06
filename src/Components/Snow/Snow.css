@@ -3014,3 +3014,9 @@
         transform: translate(51.34785vw, 100vh) scale(0.9307);
     }
 }
+
+@media(max-width: 400px){
+    .signature svg {
+        width: 300px;
+    }
+}
