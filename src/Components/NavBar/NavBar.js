@@ -239,10 +239,10 @@ function NavBar() {
             <div id="Menu">
                 <Fade bottom cascade delay={500} distance={"200%"}>
                     <ul>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="#AboutMe">About Me</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Skills-Container">Skills</a></li>
+                        <li><a href="#ContactMe">Contact Me</a></li>
                         <li id="Resume"><a target="_blank" href="./Documents/Resume.pdf">Resume</a></li>
                     </ul>
                 </Fade>
