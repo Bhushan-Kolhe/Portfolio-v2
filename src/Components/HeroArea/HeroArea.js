@@ -14,7 +14,12 @@ function HeroArea() {
                         <span className="AlternateFont"> Websites</span>, <span className="AlternateFont"> 
                         Applications</span> and <span className="AlternateFont">Games</span>. 
                     </h1>
-                    <button className="GetInTouch-Btn">Get In Touch </button>
+                    <div>
+                        <a href="#ContactMe">
+                            <button className="GetInTouch-Btn">Get In Touch </button>
+                        </a>
+                    </div>
+
                 </div>
             </Fade>
             <MouseScroll />

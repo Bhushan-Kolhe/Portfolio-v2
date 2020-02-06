@@ -111,9 +111,17 @@
     text-align: center;
 }
 
+#ContactMe-Card-Bottom a{
+    text-decoration: none;
+}
+
 #ContactMe-Card-Bottom h4{
     margin-bottom: 7px;
     color: #778296;
+}
+
+#ContactMe-Card-Bottom h4:hover{
+    color: #011627;
 }
 
 @media(max-width: 1100px){

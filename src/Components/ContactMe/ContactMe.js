@@ -43,9 +43,11 @@ function ContactMe() {
                 </div>
                 <div id="ContactMe-Card-Bottom">
                     <Fade delay={1200} cascade>
-                        <h4>
-                            Designed and Built by &copy;Bhushan Kolhe
-                        </h4>
+                        <a target="_blank" href="https://github.com/chocoholic-me/Portfolio-v2">
+                            <h4>
+                                Designed and Built by &copy;Bhushan Kolhe
+                            </h4>
+                        </a>
                     </Fade>
                 </div>
             </div>
