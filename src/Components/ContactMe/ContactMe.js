@@ -2,9 +2,17 @@ import React from 'react';
 import Socials from '../../Resources/Socials';
 import uuid from 'uuid';
 import Fade from 'react-reveal/Fade';
+import ReactGA from 'react-ga';
 import './ContactMe.css';
 
 function ContactMe() {
+    const onClickSocial = (Social) => {
+        ReactGA.event({
+            category: 'Social',
+            action: `Visited ${Social.name}`
+        })
+    }
+
     return (
         <div id="ContactMe">
             <Fade bottom delay={200} distance={"60%"}>
@@ -29,7 +37,7 @@ function ContactMe() {
                                     Socials.map( Element => {
                                         const icon = `./img/${Element.icon}`
                                         return (
-                                            <a key={uuid.v4()} target="_blank" href={Element.link}>
+                                            <a onClick={() => { onClickSocial(Element) }} key={uuid.v4()} target="_blank" href={Element.link}>
                                                 <img src={icon} alt="Social Icon"></img>
                                             </a>
                                         )

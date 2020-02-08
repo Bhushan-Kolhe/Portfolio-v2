@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import ReactGA from 'react-ga';
 import './NavBar.css';
 
 function NavBar() {
@@ -7,9 +8,11 @@ function NavBar() {
     const LogoStyles={
         fill: "#fcba03"
     }
+
     const PathStyles={
         stroke: "#fcba03"
     }
+
     const HandleMenuCrossClick = () => {
         const NavBar = document.getElementById("NavBar");
         const Menu = document.getElementById("Menu");
@@ -32,6 +35,7 @@ function NavBar() {
             Menu.style.width = "auto"
         }
     }
+
     const HandleScroll = () => {
         const NavBar = document.getElementById("NavBar");
         const NAvBarATags = document.querySelectorAll("#Menu ul li a");
@@ -53,6 +57,13 @@ function NavBar() {
             Ul.className = "ul-OnScrollUp";
             
         }
+    }
+
+    const onClickResume = () => {
+        ReactGA.event({
+            category: 'Download',
+            action: "Downloaded Resume"
+        })
     }
 
     window.onscroll = HandleScroll;
@@ -243,7 +254,7 @@ function NavBar() {
                         <li><a href="#Projects">Projects</a></li>
                         <li><a href="#Skills-Container">Skills</a></li>
                         <li><a href="#ContactMe">Contact Me</a></li>
-                        <li id="Resume"><a target="_blank" href="./Documents/Resume.pdf">Resume</a></li>
+                        <li id="Resume"><a onClick={onClickResume} target="_blank" href="./Documents/Resume.pdf">Resume</a></li>
                     </ul>
                 </Fade>
                 <div className="menu cross menu--2">

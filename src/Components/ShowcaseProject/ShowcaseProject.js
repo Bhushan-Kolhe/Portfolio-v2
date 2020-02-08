@@ -1,6 +1,7 @@
 import React from 'react';
 import Projects from '../../Resources/Projects';
 import Fade from 'react-reveal/Fade';
+import ReactGA from 'react-ga';
 import './ShowcaseProject.css';
 
 function ShowcaseProject(props) {
@@ -19,6 +20,21 @@ function ShowcaseProject(props) {
             marginLeft: "70px"
         }
     }
+
+    const onClickGitLink = () => {
+        ReactGA.event({
+            category: 'Github',
+            action: `Visited ${Project.Title} github`
+        })
+    }
+
+    const onClickLiveLink = () => {
+        ReactGA.event({
+            category: 'Live Project',
+            action: `Visited ${Project.Title} live link`
+        })
+    }
+
     return (
         <Fade bottom cascade distance={"40%"}>
             <div className="ShowcaseProject" style={ShowcaseProjectStyle}>
@@ -36,14 +52,14 @@ function ShowcaseProject(props) {
                             {
                                 Project.HasGit ? ( <Fade bottom delay={200} >
                                         <div>
-                                            <a className="ShowcaseProject-GitLink" target="_blank" href={Project.GitLink}> Github </a>
+                                            <a onClick={onClickGitLink} className="ShowcaseProject-GitLink" target="_blank" href={Project.GitLink}> Github </a>
                                         </div>
                                     </Fade> ) : ""}
                             {
                                 Project.HasLink ? (
                                     <Fade bottom  delay={350} >
                                         <div>
-                                            <a className="ShowcaseProject-LiveLink" target="_blank" href={Project.Link}> Live Version </a>
+                                            <a onClick={onClickLiveLink} className="ShowcaseProject-LiveLink" target="_blank" href={Project.Link}> Live Version </a>
                                         </div>
                                     </Fade>
                                 ) : ""
