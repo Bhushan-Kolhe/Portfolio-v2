@@ -16,7 +16,12 @@
 
 .ShowcaseProject-Img-Container img{
     width: 25vw;
-    padding-right: 5vw;
+    margin-right: 5vw;
+    animation: showcaseProject-hover-out-anime 0.5s ease forwards;
+}
+
+.ShowcaseProject-Img-Container img:hover {
+    animation: showcaseProject-hover-anime 0.5s ease forwards;
 }
 
 .ShowcaseProject-Desc{
@@ -90,7 +95,7 @@
 @media(max-width: 1200px){
     .ShowcaseProject-Img-Container img{
         width: 40vw;
-        padding-right: 5vw;
+        margin-right: 5vw;
     }
     
     .ShowcaseProject-GitLink,
@@ -107,8 +112,8 @@
     }
     .ShowcaseProject-Img-Container img{
         width: 75vw;
-        padding-right: 0;
-        padding-bottom: 5vh;
+        margin-right: 0;
+        margin-bottom: 5vh;
     }
     .ShowcaseProject-Desc{
         width: 75vw;
@@ -181,5 +186,32 @@
 
     .ShowcaseProject-Stack{
         font-size: 4em;
+    }
+}
+
+
+@keyframes showcaseProject-hover-anime{
+    to{
+        transform: translateY(-10px) scale(1.25);
+        -moz-transform: translateY(-10px) scale(1.25);
+        -webkit-transform: translateY(-10px) scale(1.25);
+        -o-transform: translateY(-10px) scale(1.25);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+}
+
+@keyframes showcaseProject-hover-out-anime{
+    from{
+        transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.918), -9px -9px 16px  rgba(255, 255, 255, 0.801);
+    }
+    to{
+        transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
     }
 }

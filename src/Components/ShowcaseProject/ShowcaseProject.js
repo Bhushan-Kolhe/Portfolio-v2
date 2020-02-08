@@ -15,8 +15,8 @@ function ShowcaseProject(props) {
             transform: "translateX(10px)"
         }
         ShowcaseImgStyle={
-            paddingRight: "0px",
-            paddingLeft: "70px"
+            marginRight: "0px",
+            marginLeft: "70px"
         }
     }
     return (
