@@ -1,7 +1,7 @@
 const Projects = [
     {
         Title: "GitProfile",
-        Desc: `This is simple webapp which gives a nicer look to your Github profile.`,
+        Desc: `This is a simple web application which gives a nicer look to your Github profile. This uses Github API to get user data and display repositories.`,
         HasGit: true,
         GitLink: "https://github.com/chocoholic-me/GitProfile",
         HasLink: true,
@@ -14,7 +14,7 @@ const Projects = [
     },
     {
         Title: "Chatzo",
-        Desc: `This is a simple realtime chatroom webapp.`,
+        Desc: `This is a simple chatroom web-application which allows user to create new chatrooms and join any chatroom. This uses socket.io to create a fast and reliable connection between users.`,
         HasGit: true,
         GitLink: "https://github.com/chocoholic-me/chat-app",
         HasLink: true,
@@ -27,7 +27,7 @@ const Projects = [
     },
     {
         Title: "Sort Visualizer",
-        Desc: `This webapp lets you visualize various sorting algorithms.`,
+        Desc: `This is a sorting algorithm visualization web-application. This allows users to visualize the sorting process of various sorts like Merge-sort, Quick-sort, Insertion-sort, etc to facilitate easier understanding of working of sorts.`,
         HasGit: true,
         GitLink: "https://github.com/chocoholic-me/Sorting-Visualizer",
         HasLink: true,
@@ -47,114 +47,106 @@ const Projects = [
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
-        Stack: ["ReactJs", "NodeJs", "Express", "Socket.io"]
+        Stack: ["ReactJs", "Node.Js", "Express", "Socket.io"]
     },
     {
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Wit potential. Wit potential. Wit potential. Within you is an entire 
-            universe, just waiting to be built.`,
+        Title: "Todo List App",
+        Desc: `This is a Full-Stack Todo List web application. Creating this application helped me learn the core basics of react and full stack development.`,
         HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
+        GitLink: "https://github.com/chocoholic-me/React-Node.js-Express.js-Mysql-FullStack-TodoList-App",
         HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        Link: "http://todoapp.bhushankolhe.com/",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["ReactJs", "Node.Js", "Express", "MySQL"]
     },
     {
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
+        Title: "Portfolio V1",
+        Desc: `This was my first protfolio back in 2019. This was also my first website published.`,
         HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
+        GitLink: "https://github.com/chocoholic-me/Portfolio-v1",
         HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        Link: "http://version1.bhushankolhe.com/#ContactMe",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["HTML", "CSS", "Javascript"]
     },
     {
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
+        Title: "Weather-Widget",
+        Desc: `This is a easy access web application to let users view weather of any city/area. Nuilding this helped me in learning about API communication in web applications.`,
         HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
+        GitLink: "https://github.com/chocoholic-me/ReactJS-Weather-Widget",
         HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        Link: "http://www.weather-widget.bhushankolhe.com/",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["React.Js", "Open Weather Map API"]
     },
     {
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
+        Title: "Weather Widget Chrome Extension",
+        Desc: `This is a easy access chrome extension to let users view weather of any city/area. Building helped me learn and understand the workings of chrome extensions.`,
         HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
-        HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        GitLink: "https://github.com/chocoholic-me/Weather-Widget_ChromeExtension",
+        HasLink: false,
+        Link: "",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["HTML", "CSS", "Javascript", "Open Weather Map API"]
     },
     {
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
-        HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
+        Title: "Bollywood Quiz | Guess the movie names",
+        Desc: `This is simple and fun movie quiz game made for Android devices.`,
+        HasGit: false,
+        GitLink: "",
         HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        Link: "https://play.google.com/store/apps/details?id=com.chocoholicstudio.bollywood",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["C#", "Unity", "Python"]
+    },
+    {
+        Title: "Maths | Series Puzzles Game",
+        Desc: `This is simple and fun math quiz game made for Android devices.`,
+        HasGit: false,
+        GitLink: "",
+        HasLink: true,
+        Link: "https://play.google.com/store/apps/details?id=com.choholicstudio.mathsseries",
+        OnShowcase: false,
+        Stack: ["C#", "Unity"]
     },{
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
+        Title: "Minesweeper.Ai",
+        Desc: `An AI designed to learn to play minesweeper using neuralevolution and genetic algorithm. Created a neural network from scratch and used genetic algorithm in its learning process`,
         HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
-        HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        GitLink: "https://github.com/chocoholic-me/MinesweeperNeuralEvolution",
+        HasLink: false,
+        Link: "",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["Python"]
     }
     ,{
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
+        Title: "To-Do App",
+        Desc: `This is a simple To-Do desktop application with user authentication. Building this helped me learn UI development in Python using Kivy`,
         HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
-        HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        GitLink: "https://github.com/chocoholic-me/ToDoApp",
+        HasLink: false,
+        Link: "",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["Python", "Kivy", "MySQL", "React"]
     }
     ,{
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
+        Title: "Blogging WebApp",
+        Desc: `This web applications allows users to create profile, Post blogs, like, comment and follow other users Blogs etc. This was my first web application which taught me a lot about developing FrontEnd, BackEnd and thier communication process.`,
         HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
-        HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        GitLink: "https://github.com/chocoholic-me/BloggingWebsite",
+        HasLink: false,
+        Link: "",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["Node.Js", "Express", "MangoDB", "Sass"]
     },
     {
-        Title: "Nikita Gill",
-        Desc: `Within you is a light that is brighter than the belittling words 
-            of those who are afraid of your potential. Within you is an entire 
-            universe, just waiting to be built.`,
-        HasGit: true,
-        GitLink: "https://github.com/chocoholic-me/GitProfile",
+        Title: "Twin Gliders",
+        Desc: `My first attempt at creating a android game using Unity. From developing to publishing this app, I learned the whole process of product development.`,
+        HasGit: false,
+        GitLink: "",
         HasLink: true,
-        Link: "https://git--profile.herokuapp.com/",
+        Link: "https://play.google.com/store/apps/details?id=com.ChocoholicStudio.TwinGlider",
         OnShowcase: false,
-        Stack: ["HTML", "CSS", "MangoDB", "React"]
+        Stack: ["C#", "Unity"]
     }
 
 ];
