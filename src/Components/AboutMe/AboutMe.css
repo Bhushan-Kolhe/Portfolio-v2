@@ -33,15 +33,15 @@
     border-radius: 50%;
 }
 #AboutMe-Title{
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 #AboutMe-Body{
     margin-top: 2vh;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 #AboutMe-Quote{
     margin-top: 2vh;
-    font-size: 1.6em;
+    font-size: 1.4em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -201,13 +201,13 @@
         font-size: 1em;
     }
     #AboutMe-Quote{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     #AboutMe-Left img{
         width: 60vw;
     }
     #AboutMe-Right{
-        width: 90%;
+        width: 98%;
     }
     #AboutMe-Left{
         width: 90%;
