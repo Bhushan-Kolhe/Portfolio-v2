@@ -45,7 +45,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    color: #c1cad3;
     font-style: oblique;
 }
 #AboutMe-Quote p{
@@ -68,41 +67,41 @@
 }
 @keyframes quote-anime{ 
     0%{
-        opacity: 0%;
+        opacity: 0;
         transform: translate(0%, 50%);
     }
     5%{
-        opacity: 100%;
+        opacity: 1;
         transform: translate(0%, 0%);
     }
     95%{
-        opacity: 100%;
+        opacity: 1;
         transform: translate(0%, 0%);
     }
     100%{
-        opacity: 0%;
+        opacity: 0;
         transform: translate(0%, -50%);
     }
 }
 
 @-moz-keyframes quote-anime{ 
     0%{
-        opacity: 0%;
+        opacity: 0;
         transform: translate(0%, 50%);
         -moz-transform: translate(0%, 50%);
     }
     5%{
-        opacity: 100%;
+        opacity: 1;
         transform: translate(0%, 0%);
         -moz-transform: translate(0%, 0%);
     }
     95%{
-        opacity: 100%;
+        opacity: 1;
         transform: translate(0%, 0%);
         -moz-transform: translate(0%, 0%);
     }
     100%{
-        opacity: 0%;
+        opacity: 0;
         transform: translate(0%, -50%);
         -moz-transform: translate(0%, -50%);
     }
@@ -110,22 +109,22 @@
 
 @-webkit-keyframes quote-anime{ 
     0%{
-        opacity: 0%;
+        opacity: 0;
         transform: translate(0%, 50%);
         -webkit-transform: translate(0%, 50%);
     }
     5%{
-        opacity: 100%;
+        opacity: 1;
         transform: translate(0%, 0%);
         -webkit-transform: translate(0%, 0%);
     }
     95%{
-        opacity: 100%;
+        opacity: 1;
         transform: translate(0%, 0%);
         -webkit-transform: translate(0%, 0%);
     }
     100%{
-        opacity: 0%;
+        opacity: 0;
         transform: translate(0%, -50%);
         -webkit-transform: translate(0%, -50%);
     }
@@ -133,22 +132,22 @@
 
 @-o-keyframes quote-anime{ 
     0%{
-        opacity: 0%;
+        opacity: 0;
         transform: translate(0%, 50%);
         -o-transform: translate(0%, 50%);
     }
     5%{
-        opacity: 100%;
+        opacity: 1;
         transform: translate(0%, 0%);
         -o-transform: translate(0%, 0%);
     }
     95%{
-        opacity: 100%;
+        opacity: 1;
         transform: translate(0%, 0%);
         -o-transform: translate(0%, 0%);
     }
     100%{
-        opacity: 0%;
+        opacity: 0;
         transform: translate(0%, -50%);
         -o-transform: translate(0%, -50%);
     }
