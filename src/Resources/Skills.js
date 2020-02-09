@@ -1,6 +1,6 @@
 const SkillList = {
     Development: {
-        
+
         FrontEnd: [
             "React",
             "Angular",

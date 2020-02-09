@@ -5,8 +5,9 @@ import HomePage from './Components/HomePage/HomePage';
 import ReactGA from 'react-ga';
 import './App.css';
 
+//Initialize Google Analytics
 function initializeAnalytics() {
-  const trackingId = "";
+  const trackingId = ""; // Add your Google Analytics Token here
   ReactGA.initialize(trackingId);
   ReactGA.pageview('/HomePage');
 }

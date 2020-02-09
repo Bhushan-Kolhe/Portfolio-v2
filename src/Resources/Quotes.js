@@ -1,5 +1,4 @@
-const Quotes = [
-    {
+const Quotes = [{
         quote: "Life is only as meaningful as we fool ourselves into believing it is.",
         by: "Unknown"
     },
@@ -546,10 +545,11 @@ const Quotes = [
     },
 ];
 
-const getRandomInt =  (max) => {
+const getRandomInt = (max) => {
     return Math.floor(Math.random() * Math.floor(max));
-  }
+}
 
+// Reutrns a random quote
 const RandomQuote = () => {
     const len = Quotes.length;
     const index = getRandomInt(len - 1);

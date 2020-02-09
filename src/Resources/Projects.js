@@ -1,5 +1,31 @@
-const Projects = [
-    {
+/*
+ * Showcase Project Layout:
+ * Title: "",
+ * Desc: ``,
+ * HasGit: Bool,
+ * GitLink: "",
+ * HasLink: Bool,
+ * Link: "",
+ * OnShowcase: Bool,
+ * ShowcaseId: Int,
+ * HasImages: Bool,
+ * Img: "",
+ * Stack: ["",""]
+ */
+
+/*
+ * Basic Project Layout:
+ * Title: "",
+ * Desc: ``,
+ * HasGit: Bool,
+ * GitLink: "",
+ * HasLink: Bool,
+ * Link: "https://play.google.com/store/apps/details?id=com.choholicstudio.mathsseries",
+ * OnShowcase: Bool,
+ * Stack: ["", ""]
+ */
+
+const Projects = [{
         Title: "GitProfile",
         Desc: `This is a simple web application which gives a nicer look to your Github profile. This uses Github API to get user data and display repositories.`,
         HasGit: true,
@@ -108,7 +134,7 @@ const Projects = [
         Link: "https://play.google.com/store/apps/details?id=com.choholicstudio.mathsseries",
         OnShowcase: false,
         Stack: ["C#", "Unity"]
-    },{
+    }, {
         Title: "Minesweeper.Ai",
         Desc: `An AI designed to learn to play minesweeper using neuralevolution and genetic algorithm. Created a neural network from scratch and used genetic algorithm in its learning process`,
         HasGit: true,
@@ -117,8 +143,7 @@ const Projects = [
         Link: "",
         OnShowcase: false,
         Stack: ["Python"]
-    }
-    ,{
+    }, {
         Title: "To-Do App",
         Desc: `This is a simple To-Do desktop application with user authentication. Building this helped me learn UI development in Python using Kivy`,
         HasGit: true,
@@ -127,8 +152,7 @@ const Projects = [
         Link: "",
         OnShowcase: false,
         Stack: ["Python", "Kivy", "MySQL", "React"]
-    }
-    ,{
+    }, {
         Title: "Blogging WebApp",
         Desc: `This web applications allows users to create profile, Post blogs, like, comment and follow other users Blogs etc. This was my first web application which taught me a lot about developing FrontEnd, BackEnd and thier communication process.`,
         HasGit: true,
@@ -151,19 +175,24 @@ const Projects = [
 
 ];
 
+// Returns all the basic projects
 const GetProjects = () => {
     return Projects.filter(Element => {
-        if(!Element.OnShowcase)
+        if (!Element.OnShowcase)
             return Element;
     });
 }
 
+// Returns all Showcase projects 
 const GetShowcaseProjectById = id => {
     return Projects.filter(Element => {
-        if(Element.OnShowcase)
-            if(Element.ShowcaseId == id)
+        if (Element.OnShowcase)
+            if (Element.ShowcaseId == id)
                 return Element;
     })[0];
 }
 
-export default { GetShowcaseProjectById, GetProjects };
+export default {
+    GetShowcaseProjectById,
+    GetProjects
+};
