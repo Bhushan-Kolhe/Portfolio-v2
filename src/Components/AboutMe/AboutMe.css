@@ -1,4 +1,4 @@
-#AboutMe{
+#AboutMe {
     width: 100vw;
     min-height: 100vh;
     background: #011627;
@@ -7,13 +7,15 @@
     align-items: center;
     color: #f0f8ffe7;
 }
-#AboutMe-Container{
+
+#AboutMe-Container {
     display: flex;
     justify-content: space-between;
     width: 80%;
     height: 60%;
 }
-#AboutMe-Left{
+
+#AboutMe-Left {
     width: 38.2%;
     height: 100%;
     display: flex;
@@ -21,25 +23,34 @@
     justify-content: center;
     align-items: center;
 }
-#AboutMe-Right{
+
+#AboutMe-Right {
     width: 61.8%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#AboutMe-Left img{
+
+#AboutMe-Left img {
     width: 25vw;
     border-radius: 50%;
 }
-#AboutMe-Title{
+
+#AboutMe-Title {
     font-size: 1.6em;
 }
-#AboutMe-Body{
+
+#AboutMe-Body {
     margin-top: 2vh;
     font-size: 1.2em;
 }
-#AboutMe-Quote{
+
+#AboutMe-Body p {
+    text-align: justify;
+}
+
+#AboutMe-Quote {
     margin-top: 2vh;
     font-size: 1.4em;
     display: flex;
@@ -47,206 +58,241 @@
     align-items: flex-end;
     font-style: oblique;
 }
-#AboutMe-Quote p{
+
+#AboutMe-Quote p {
     align-self: flex-start;
 }
+
 #AboutMe-Quote p:before {
     content: "\f10d";
     font-family: 'Fontawesome';
     float: left;
     margin-right: 2vw;
 }
-#AboutMe-Quote small{
+
+#AboutMe-Quote small {
     color: #97a0a7;
 }
-#AboutMe-Quote.Quote-Animation{
+
+#AboutMe-Quote.Quote-Animation {
     animation: quote-anime 10s ease infinite;
     -moz-animation: quote-anime 10s ease infinite;
     -webkit-animation: quote-anime 10s ease infinite;
     -o-animation: quote-anime 10s ease infinite;
 }
-@keyframes quote-anime{ 
-    0%{
+
+@keyframes quote-anime {
+    0% {
         opacity: 0;
         transform: translate(0%, 50%);
     }
-    5%{
+
+    5% {
         opacity: 1;
         transform: translate(0%, 0%);
     }
-    95%{
+
+    95% {
         opacity: 1;
         transform: translate(0%, 0%);
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: translate(0%, -50%);
     }
 }
 
-@-moz-keyframes quote-anime{ 
-    0%{
+@-moz-keyframes quote-anime {
+    0% {
         opacity: 0;
         transform: translate(0%, 50%);
         -moz-transform: translate(0%, 50%);
     }
-    5%{
+
+    5% {
         opacity: 1;
         transform: translate(0%, 0%);
         -moz-transform: translate(0%, 0%);
     }
-    95%{
+
+    95% {
         opacity: 1;
         transform: translate(0%, 0%);
         -moz-transform: translate(0%, 0%);
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: translate(0%, -50%);
         -moz-transform: translate(0%, -50%);
     }
 }
 
-@-webkit-keyframes quote-anime{ 
-    0%{
+@-webkit-keyframes quote-anime {
+    0% {
         opacity: 0;
         transform: translate(0%, 50%);
         -webkit-transform: translate(0%, 50%);
     }
-    5%{
+
+    5% {
         opacity: 1;
         transform: translate(0%, 0%);
         -webkit-transform: translate(0%, 0%);
     }
-    95%{
+
+    95% {
         opacity: 1;
         transform: translate(0%, 0%);
         -webkit-transform: translate(0%, 0%);
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: translate(0%, -50%);
         -webkit-transform: translate(0%, -50%);
     }
 }
 
-@-o-keyframes quote-anime{ 
-    0%{
+@-o-keyframes quote-anime {
+    0% {
         opacity: 0;
         transform: translate(0%, 50%);
         -o-transform: translate(0%, 50%);
     }
-    5%{
+
+    5% {
         opacity: 1;
         transform: translate(0%, 0%);
         -o-transform: translate(0%, 0%);
     }
-    95%{
+
+    95% {
         opacity: 1;
         transform: translate(0%, 0%);
         -o-transform: translate(0%, 0%);
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: translate(0%, -50%);
         -o-transform: translate(0%, -50%);
     }
 }
 
-@media(max-width: 1200px){
-    #AboutMe-Container{
+@media(max-width: 1200px) {
+    #AboutMe-Container {
         justify-content: space-between;
         align-items: center;
         height: 90%;
     }
 }
 
-@media(max-width: 800px){
-    #AboutMe-Container{
+@media(max-width: 800px) {
+    #AboutMe-Container {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         height: 90%;
     }
-    #AboutMe-Title{
+
+    #AboutMe-Title {
         font-size: 1.5em;
     }
-    #AboutMe-Body{
+
+    #AboutMe-Body {
         font-size: 1em;
     }
-    #AboutMe-Quote{
+
+    #AboutMe-Quote {
         font-size: 1em;
     }
-    #AboutMe-Left img{
+
+    #AboutMe-Left img {
         width: 50vw;
     }
-    #AboutMe-Right{
+
+    #AboutMe-Right {
         width: 90%;
     }
-    #AboutMe-Left{
+
+    #AboutMe-Left {
         width: 90%;
         height: auto;
         margin-bottom: 10vh;
     }
 }
 
-@media(max-width: 400px){
-    #AboutMe-Container{
+@media(max-width: 400px) {
+    #AboutMe-Container {
         padding: 7vh 0;
     }
-    #AboutMe-Title{
+
+    #AboutMe-Title {
         font-size: 1.5em;
     }
-    #AboutMe-Body{
+
+    #AboutMe-Body {
         font-size: 1em;
     }
-    #AboutMe-Quote{
+
+    #AboutMe-Quote {
         font-size: 1em;
     }
-    #AboutMe-Left img{
+
+    #AboutMe-Left img {
         width: 60vw;
     }
-    #AboutMe-Right{
+
+    #AboutMe-Right {
         width: 98%;
     }
-    #AboutMe-Left{
+
+    #AboutMe-Left {
         width: 90%;
         height: auto;
     }
 }
 
-@media(min-width: 2560px){
-    #AboutMe-Title{
+@media(min-width: 2560px) {
+    #AboutMe-Title {
         font-size: 3.6em;
     }
-    #AboutMe-Body{
+
+    #AboutMe-Body {
         font-size: 2.2em;
     }
-    #AboutMe-Quote{
+
+    #AboutMe-Quote {
         font-size: 2.6em;
     }
 }
 
-@media(min-width: 3840px){
-    #AboutMe-Title{
+@media(min-width: 3840px) {
+    #AboutMe-Title {
         font-size: 4.6em;
     }
-    #AboutMe-Body{
+
+    #AboutMe-Body {
         font-size: 3.2em;
     }
-    #AboutMe-Quote{
+
+    #AboutMe-Quote {
         font-size: 3.6em;
     }
 }
 
-@media(min-width: 7680px){
-    #AboutMe-Title{
+@media(min-width: 7680px) {
+    #AboutMe-Title {
         font-size: 9em;
     }
-    #AboutMe-Body{
+
+    #AboutMe-Body {
         font-size: 6em;
     }
-    #AboutMe-Quote{
+
+    #AboutMe-Quote {
         font-size: 6.6em;
     }
 }
