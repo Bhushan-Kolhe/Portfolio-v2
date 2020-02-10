@@ -73,7 +73,7 @@ const Projects = [{
         HasLink: true,
         Link: "https://git--profile.herokuapp.com/",
         OnShowcase: false,
-        Stack: ["ReactJs", "Node.Js", "Express", "Socket.io"]
+        Stack: ["Angular", "Node.Js", "Restify", "MangoDB"]
     },
     {
         Title: "Todo List App",
