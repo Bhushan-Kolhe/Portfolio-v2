@@ -10,7 +10,7 @@ function HeroArea() {
                 <div className="Container HeroContainer PrimaryFont">
                     <h1 className="Text-1 "> Hi, I am <span className="AlternateFont">Bhushan Kolhe</span>.</h1>
                     <h1 className="Text-2 AlternateFont"> I love to build things.</h1>
-                    <h1 className="Text-3">I am software developer based in India and I love build beautifully simple things such as  
+                    <h1 className="Text-3">I am software developer based in India and I love to build beautifull things such as  
                         <span className="AlternateFont"> Websites</span>, <span className="AlternateFont"> 
                         Applications</span> and <span className="AlternateFont">Games</span>. 
                     </h1>
