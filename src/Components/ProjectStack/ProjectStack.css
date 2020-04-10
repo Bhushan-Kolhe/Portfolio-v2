@@ -1,10 +1,10 @@
 #ProjectStack-Container{
     width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(#f8fffd , #E0E5EC);
-    background: -moz-linear-gradient(#f8fffd , #E0E5EC);
-    background: -webkit-linear-gradient(#f8fffd , #E0E5EC);
-    background: -o-linear-gradient(#f8fffd , #E0E5EC);
+    background: linear-gradient(var(--tertiary-color) , var(--tertiary-color-7));
+    background: -moz-linear-gradient(var(--tertiary-color) , var(--tertiary-color-7));
+    background: -webkit-linear-gradient(var(--tertiary-color) , var(--tertiary-color-7));
+    background: -o-linear-gradient(var(--tertiary-color) , var(--tertiary-color-7));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,22 +62,22 @@
     border: none;
     font-size: 1.5em;
     border-radius: 20px;
-    background: #f0f4fa;
-    border: 2px solid #f0f4fa;
-    box-shadow: 6px 6px 20px rgba(0,0,0,.1), 
-            -6px -6px 20px rgba(243, 242, 242, 0.493);
+    background: var(--tertiary-color-8);
+    border: 2px solid var(--tertiary-color-8);
+    box-shadow: 6px 6px 20px #0000001a, 
+            -6px -6px 20px #f3f2f27e;
 }
 
 #ProjectStack-ShowMore-btn:hover{
     cursor: pointer;
-    border: 2px solid #fff;
-    box-shadow: 6px 6px 20px rgba(0,0,0,.1), 
-            -6px -6px 20px rgba(224, 222, 222, 0.767);
+    border: 2px solid var(--tertiary-color-9);
+    box-shadow: 6px 6px 20px #0000001a, 
+            -6px -6px 20px #e0dedec4;
 }
 
 #ProjectStack-ShowMore-btn:active{
-     box-shadow: inset 7px 7px 20px rgba(0, 0, 0, 0.13), 
-           inset -7px -7px 20px rgba(255, 255, 255, 0.74);
+     box-shadow: inset 7px 7px 20px #00000021, 
+           inset -7px -7px 20px #ffffffbd;
 }
 
 @media(max-width: 1200px){

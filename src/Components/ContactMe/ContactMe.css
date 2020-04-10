@@ -1,11 +1,11 @@
 #ContactMe{
     width: 100vw;
-    background: #f5f6f7;
+    background: var(--tertiary-color-14);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #394150;
+    color: var(--tertiary-color-10);
     padding: 0px 0 50px;
 }
 
@@ -19,9 +19,9 @@
 
 #ContactMe-Title h1{
     font-size: 4em;
-    color: #394150;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, .1), 
-               -5px -5px 10px rgba(255, 255, 255, 1);
+    color: var(--tertiary-color-10);
+    text-shadow: 5px 5px 10px #0000001a, 
+               -5px -5px 10px #ffffff;
 }
 
 #ContactMe-Card{
@@ -30,10 +30,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 40px 0px;
-    background: #f5f6f7;
+    background: var(--tertiary-color-14);
     border-radius: 10px;
     text-align: center;
-    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA;
+    box-shadow: -4px -2px 4px 0px var(--tertiary-color-9), 4px 2px 6px 0px var(--tertiary-color-16);
 }
 
 #ContactMe-Card-Top{
@@ -55,11 +55,11 @@
 
 #ContactMe-Card-Top-Left h2{
     font-size: 2em;  
-    color: #525964;
+    color: var(--tertiary-color-19);
 }
 
 #ContactMe-Card-Top-Left h3{
-    color: #717781;
+    color: var(--tertiary-color-20);
 }
 
 #ContactMe-Card-Top-Right{
@@ -91,15 +91,15 @@
     align-items: center;
     border-radius: 50%;
     padding: 10px;
-    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA;
+    box-shadow: -4px -2px 4px 0px var(--tertiary-color-9), 4px 2px 6px 0px var(--tertiary-color-16);
 }
 
 #ContactMe-SocialIcons-Grid a:hover{
-    box-shadow: -4px -2px 4px 0px #f0efef, 4px 2px 6px 0px rgb(206, 211, 216);
+    box-shadow: -4px -2px 4px 0px var(--tertiary-color-21), 4px 2px 6px 0px var(--tertiary-color-22);
 }
 
 #ContactMe-SocialIcons-Grid a:active{
-    box-shadow: inset -4px -2px 4px 0px #f0efef, inset 4px 2px 6px 0px rgb(206, 211, 216);
+    box-shadow: inset -4px -2px 4px 0px var(--tertiary-color-21), inset 4px 2px 6px 0px var(--tertiary-color-22);
 }
 
 #ContactMe-SocialIcons-Grid img{
@@ -117,11 +117,11 @@
 
 #ContactMe-Card-Bottom h4{
     margin-bottom: 7px;
-    color: #778296;
+    color: var(--tertiary-color-23);
 }
 
 #ContactMe-Card-Bottom h4:hover{
-    color: #011627;
+    color: var(--tertiary-color-24);
 }
 
 @media(max-width: 1100px){

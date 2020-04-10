@@ -14,7 +14,7 @@
 }
 
 .Nav-Dark {
-    background: #011627;
+    background: var(--primary-color);
     animation: menu-anime 1s ease forwards;
     -moz-animation: menu-anime 1s ease forwards;
     -webkit-animation: menu-anime 1s ease forwards;
@@ -48,13 +48,13 @@
 }
 
 #Menu ul li a {
-    color: #1b2735;
+    color: var(--primary-color-2);
     text-decoration: none;
     padding: 3px;
 }
 
 #Menu ul li a:hover {
-    color: #daa104;
+    color: var(--secondary-color);
 }
 
 #Logo {
@@ -77,7 +77,7 @@ input {
 
 .menu svg path {
     fill: none;
-    stroke: #fcba03;
+    stroke: var(--secondary-color-2);
     stroke-width: 3;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -146,7 +146,7 @@ label:hover circle {
         flex-direction: row;
         justify-content: space-between;
         padding: 3vh 0 0 0vh;
-        background: #011627;
+        background: var(--primary-color);
         width: 100%;
         margin: 0;
     }
@@ -179,7 +179,7 @@ label:hover circle {
         padding: 5px;
     }
     #Menu ul li a {
-        color: #fcba03;
+        color: var(--secondary-color-2);
     }
 }
 
@@ -314,7 +314,7 @@ label:hover circle {
     }
     to{
         padding: 0vh 10%;
-        background: #011627;
+        background: var(--primary-color);
     }
 }
 
@@ -325,7 +325,7 @@ label:hover circle {
     }
     to{
         padding: 0vh 10%;
-        background: #011627;
+        background: var(--primary-color);
     }
 }
 
@@ -336,7 +336,7 @@ label:hover circle {
     }
     to{
         padding: 0vh 10%;
-        background: #011627;
+        background: var(--primary-color);
     }
 }
 
@@ -347,43 +347,43 @@ label:hover circle {
     }
     to{
         padding: 0vh 10%;
-        background: #011627;
+        background: var(--primary-color);
     }
 }
 
 @keyframes atags-scrolldown-anime{
     from{
-        color: #1b2735;
+        color: var(--primary-color-2);
     }
     to{
-        color: #f8fffd;
+        color: var(--tertiary-color);
     }
 }
 
 @-moz-keyframes atags-scrolldown-anime{
     from{
-        color: #1b2735;
+        color: var(--primary-color-2);
     }
     to{
-        color: #f8fffd;
+        color: var(--tertiary-color);
     }
 }
 
 @-webkit-keyframes atags-scrolldown-anime{
     from{
-        color: #1b2735;
+        color: var(--primary-color-2);
     }
     to{
-        color: #f8fffd;
+        color: var(--tertiary-color);
     }
 }
 
 @-o-keyframes atags-scrolldown-anime{
     from{
-        color: #1b2735;
+        color: var(--primary-color-2);
     }
     to{
-        color: #f8fffd;
+        color: var(--tertiary-color);
     }
 }
 
@@ -482,7 +482,7 @@ label:hover circle {
 @keyframes navbar-scrollup-anime{
     from{
         padding: 0vh 10%;
-        background: #011627;
+        background: var(--primary-color);
     }
     to{
         padding: 2vh 10%;
@@ -493,7 +493,7 @@ label:hover circle {
 @-moz-keyframes navbar-scrollup-anime{
     from{
         padding: 0vh 10%;
-        background: #011627;
+        background: var(--primary-color);
     }
     to{
         padding: 2vh 10%;
@@ -504,7 +504,7 @@ label:hover circle {
 @-webkit-keyframes navbar-scrollup-anime{
     from{
         padding: 0vh 10%;
-        background: #011627;
+        background: var(--primary-color);
     }
     to{
         padding: 2vh 10%;
@@ -515,7 +515,7 @@ label:hover circle {
 @-o-keyframes navbar-scrollup-anime{
     from{
         padding: 0vh 10%;
-        background: #011627;
+        background: var(--primary-color);
     }
     to{
         padding: 2vh 10%;
@@ -525,37 +525,37 @@ label:hover circle {
 
 @keyframes atags-scrollup-anime{
     from{
-        color: #f8fffd;
+        color: var(--tertiary-color);
     }
     to{
-        color: #1b2735;
+        color: var(--primary-color-2);
     }
 }
 
 @-moz-keyframes atags-scrollup-anime{
     from{
-        color: #f8fffd;
+        color: var(--tertiary-color);
     }
     to{
-        color: #1b2735;
+        color: var(--primary-color-2);
     }
 }
 
 @-webkit-keyframes atags-scrollup-anime{
     from{
-        color: #f8fffd;
+        color: var(--tertiary-color);
     }
     to{
-        color: #1b2735;
+        color: var(--primary-color-2);
     }
 }
 
 @-o-keyframes atags-scrollup-anime{
     from{
-        color: #f8fffd;
+        color: var(--tertiary-color);
     }
     to{
-        color: #1b2735;
+        color: var(--primary-color-2);
     }
 }
 

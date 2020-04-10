@@ -1,6 +1,6 @@
 #WhyWorkWithMe-Section{
     width: 100vw;
-    background: #f5f6f7;
+    background: var(--tertiary-color-14);
     padding: 50px 0;
 }
 
@@ -13,9 +13,9 @@
 
 #WhyWorkWithMe-Title h1{
     font-size: 4em;
-    color: #394150;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, .1), 
-               -5px -5px 10px rgba(255, 255, 255, 1);
+    color: var(--tertiary-color-10);
+    text-shadow: 5px 5px 10px #0000001a, 
+               -5px -5px 10px #ffffff;
 }
 
 #WhyWorkWithMe-Body{

@@ -1,7 +1,7 @@
 #HeroArea{
     height: 100vh;
     width: 100vw;
-    background: #f8fffd;
+    background: var(--tertiary-color);
     z-index: -1;
     display: flex;
     flex-direction: column;
@@ -17,41 +17,41 @@ h1{
     font-weight: bolder;
 }
 .Text-1{
-    color: #806e3d;
+    color: var(--secondary-color-3);
     font-size: 1.5em;
     letter-spacing: 1px;
 }
 .Text-2{
     font-size: 6.5em;
     margin-bottom: 1.5vh;
-    color: #1b2735;
+    color: var(--primary-color-2);
 }
 .Text-3{
     margin-bottom: 2vh;
     width: 50%;
     font-size: 1.5em;
-    color: #055a4f;
+    color: var(--quaternary-color);
 }
 .GetInTouch-Btn{
     padding: 15px 40px;
     background: transparent;
-    color: #9e7504;
-    border: 1.5px solid #eeaf03;
+    color: var(--secondary-color-4);
+    border: 1.5px solid var(--secondary-color-5);
     font-weight: bold;
     font-size: 1.1em;
 }
 .GetInTouch-Btn:hover{
-    color: #1b2735;
-    background: #eeaf03;
-    border-bottom: 3px solid #9e7503; 
+    color: var(--primary-color-2);
+    background: var(--secondary-color-5);
+    border-bottom: 3px solid var(--secondary-color-4); 
 }
 .GetInTouch-Btn:focus{
     outline: none;
 }
 .GetInTouch-Btn:active{
     margin-top: 2px;
-    background: #cf9902;
-    border-bottom: 1px solid #ac7f04; 
+    background: var(--secondary-color-6);
+    border-bottom: 1px solid var(--secondary-color-7); 
     transform: translateY(2px);
     -moz-transform: translateY(2px);
     -webkit-transform: translateY(2px);

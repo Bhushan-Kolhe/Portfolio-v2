@@ -1,11 +1,11 @@
 #AboutMe {
     width: 100vw;
     min-height: 100vh;
-    background: #011627;
+    background: var(--primary-color-3);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f0f8ffe7;
+    color: var(--tertiary-color-2);
 }
 
 #AboutMe-Container {
@@ -46,10 +46,6 @@
     font-size: 1.2em;
 }
 
-#AboutMe-Body p {
-    text-align: justify;
-}
-
 #AboutMe-Quote {
     margin-top: 2vh;
     font-size: 1.4em;
@@ -71,7 +67,7 @@
 }
 
 #AboutMe-Quote small {
-    color: #97a0a7;
+    color: var(--quote-color);
 }
 
 #AboutMe-Quote.Quote-Animation {

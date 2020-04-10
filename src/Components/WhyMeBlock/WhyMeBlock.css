@@ -11,11 +11,11 @@
 }
 
 .WhyMeBlock-Head h1{
-    color: #394150;
+    color: var(--tertiary-color-10);
 }
 
 .WhyMeBlock-Body{
-    color: #282e38;
+    color: var(--tertiary-color-17);
     font-size: 1.2em;
 }
 

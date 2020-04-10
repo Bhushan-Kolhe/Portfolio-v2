@@ -1,10 +1,10 @@
 #Skills-Container{
     width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
-    background: -moz-linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
-    background: -webkit-linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
-    background: -o-linear-gradient(#E0E5EC ,#f5f6f7, #f5f6f7);
+    background: linear-gradient( var(--tertiary-color-7) , var(--tertiary-color-14), var(--tertiary-color-14));
+    background: -moz-linear-gradient( var(--tertiary-color-7) , var(--tertiary-color-14), var(--tertiary-color-14));
+    background: -webkit-linear-gradient( var(--tertiary-color-7) , var(--tertiary-color-14), var(--tertiary-color-14));
+    background: -o-linear-gradient( var(--tertiary-color-7) , var(--tertiary-color-14), var(--tertiary-color-14));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,9 +22,9 @@
 
 #Skills-Title h1{
     font-size: 4em;
-    color: #394150;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, .1), 
-               -5px -5px 10px rgba(255, 255, 255, 1);
+    color: var(--tertiary-color-10);
+    text-shadow: 5px 5px 10px #0000001a, 
+               -5px -5px 10px #ffffff;
 }
 
 #Skills-grid{
@@ -60,7 +60,7 @@
 }
 
 .SkillCard-Section-Title{
-    color: #e0b115;
+    color: var(--secondary-color-10);
 }
 
 .SkillCard-Section-list{

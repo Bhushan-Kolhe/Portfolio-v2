@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Loader from './Components/Loader/Loader';
 import HomePage from './Components/HomePage/HomePage';
 import ReactGA from 'react-ga';
+import './Resources/Colors.css'
 import './App.css';
 
 //Initialize Google Analytics
