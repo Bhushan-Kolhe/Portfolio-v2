@@ -5,7 +5,7 @@
   Bhushankolhe.com - v2
 </h1>
 <p align="center">
-  The second iteration of <a href="https://www.bhushankolhe.com" target="_blank">Bhushankolhe.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a>
+  The second iteration of <a href="http://www.bhushankolhe.com" target="_blank">Bhushankolhe.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a>
 </p>
 <p align="center">
   Previous iterations:
