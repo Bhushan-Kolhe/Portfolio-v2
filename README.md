@@ -12,7 +12,7 @@
   <a href="https://github.com/chocoholic-me/Portfolio-v1" target="_blank">v1</a>,
 </p>
 
-![Capture](https://user-images.githubusercontent.com/32388461/78996894-2d49a000-7b63-11ea-8702-712f6732f6df.PNG)
+___
 
  ## 🛠 Installation and setup 
  * Download and Install [Node.JS](https://nodejs.org/en/)
