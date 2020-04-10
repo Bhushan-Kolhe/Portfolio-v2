@@ -1,6 +1,19 @@
-# Bhushan Kolhe Portfolio Version 2
-## [Live Version](http://www.bhushankolhe.com/ "Bhushan Kolhe")
- ___
+<div align="center">
+  <img alt="Logo" src="./public/img/Signature.svg" width="300" />
+</div>
+<h1 align="center">
+  Bhushankolhe.com - v2
+</h1>
+<p align="center">
+  The second iteration of <a href="https://www.bhushankolhe.com" target="_blank">Bhushankolhe.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a>
+</p>
+<p align="center">
+  Previous iterations:
+  <a href="https://github.com/chocoholic-me/Portfolio-v1" target="_blank">v1</a>,
+</p>
+
+![Capture](https://user-images.githubusercontent.com/32388461/78996894-2d49a000-7b63-11ea-8702-712f6732f6df.PNG)
+
  ## 🛠 Installation and setup 
  * Download and Install [Node.JS](https://nodejs.org/en/)
  * Clone the Repository
