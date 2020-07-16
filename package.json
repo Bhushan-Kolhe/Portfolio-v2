@@ -16,9 +16,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cleanBuild": "rimraf ./build/*",
+    "build": "npm run cleanBuild && set \"GENERATE_SOURCEMAP=false\" && react-scripts build "
   },
   "eslintConfig": {
     "extends": "react-app"
